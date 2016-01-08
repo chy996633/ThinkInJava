@@ -5,7 +5,7 @@ package com;
  */
 public class Order {
 
-    private String id;
+    private Long id;
 
     private String orderNumber;
 
@@ -17,17 +17,16 @@ public class Order {
         this.orderNumber = orderNumber;
         this.price = price;
         this.customer = customer;
-
     }
 
     public Order() {
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    private void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

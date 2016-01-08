@@ -14,7 +14,9 @@
 
             <many-to-one name="customer"
                          class="com.Customer"
-                    column="CUSTOMER_ID"
+                         column="CUSTOMER_ID"
+                         cascade="save-update"
+                         not-null="true"
                     ></many-to-one>
 
 

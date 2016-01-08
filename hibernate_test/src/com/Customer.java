@@ -34,7 +34,13 @@ public class Customer implements Serializable{
         this.orders = orders;
     }
 
+    public Customer(Long id,String name){
+        this.id = id;
+        setName(name);
+    }
+
     public Customer(){}
+
 
     public Long getId() {
         return id;
@@ -72,7 +78,7 @@ public class Customer implements Serializable{
         this.totalPrice = totalPrice;
     }
 
-    private void setId(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -80,7 +86,7 @@ public class Customer implements Serializable{
         return firstName+" "+lastName;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         StringTokenizer st = new StringTokenizer(name);
         this.firstName = st.nextToken();
         this.lastName = st.nextToken();
