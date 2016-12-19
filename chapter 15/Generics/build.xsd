@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xs:schema [
+        <!ELEMENT xs:schema (xs:element|xs:complexType)*>
+        <!ATTLIST xs:schema
+                attributeFormDefault CDATA #REQUIRED
+                elementFormDefault CDATA #REQUIRED
+                xmlns:xs CDATA #REQUIRED>
+        <!ELEMENT xs:element (#PCDATA)>
+        <!ATTLIST xs:element
+                maxOccurs CDATA #IMPLIED
+                minOccurs CDATA #IMPLIED
+                name CDATA #REQUIRED
+                type CDATA #REQUIRED>
+        <!ELEMENT xs:complexType (xs:simpleContent|xs:sequence|xs:attribute|xs:choice)*>
+        <!ATTLIST xs:complexType
+                mixed CDATA #IMPLIED
+                name CDATA #REQUIRED>
+        <!ELEMENT xs:simpleContent (xs:extension)*>
+        <!ELEMENT xs:extension (xs:attribute)*>
+        <!ATTLIST xs:extension
+                base CDATA #REQUIRED>
+        <!ELEMENT xs:attribute (#PCDATA)>
+        <!ATTLIST xs:attribute
+                name CDATA #REQUIRED
+                type CDATA #REQUIRED
+                use CDATA #IMPLIED>
+        <!ELEMENT xs:sequence (xs:element)*>
+        <!ELEMENT xs:choice (xs:element)*>
+        <!ATTLIST xs:choice
+                maxOccurs CDATA #REQUIRED
+                minOccurs CDATA #REQUIRED>
+        ]>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="project" type="projectType"/>
+  <xs:complexType name="antversionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="atleast"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="failType" mixed="true">
+    <xs:sequence>
+      <xs:element type="antversionType" name="antversion" minOccurs="0"/>
+      <xs:element type="notType" name="not" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="message" use="optional"/>
+    <xs:attribute type="xs:string" name="unless" use="optional"/>
+    <xs:attribute type="xs:string" name="property" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="echoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="message" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="filesetType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="dir" use="optional"/>
+        <xs:attribute type="xs:string" name="includes" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="equalsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="arg1" use="optional"/>
+        <xs:attribute type="xs:string" name="arg2" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="orType">
+    <xs:sequence>
+      <xs:element type="equalsType" name="equals" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteType" mixed="true">
+    <xs:sequence>
+      <xs:element type="filesetType" name="fileset" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="file" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="argType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="projectType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="conditionType" name="condition"/>
+      <xs:element type="failType" name="fail"/>
+      <xs:element type="propertyType" name="property"/>
+      <xs:element type="pathType" name="path"/>
+      <xs:element type="targetType" name="target" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="basedir"/>
+    <xs:attribute type="xs:string" name="default"/>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+  <xs:complexType name="targetType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="echoType" name="echo"/>
+      <xs:element type="javacType" name="javac"/>
+      <xs:element type="javaType" name="java"/>
+      <xs:element type="touchType" name="touch"/>
+      <xs:element type="antcallType" name="antcall"/>
+      <xs:element type="deleteType" name="delete"/>
+      <xs:element type="execType" name="exec"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="depends" use="optional"/>
+    <xs:attribute type="xs:string" name="description" use="optional"/>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="pathelementType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="location" use="optional"/>
+        <xs:attribute type="xs:string" name="path" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="pathType">
+    <xs:sequence>
+      <xs:element type="pathelementType" name="pathelement" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="notType">
+    <xs:sequence>
+      <xs:element type="orType" name="or"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="javaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="classname" use="optional"/>
+        <xs:attribute type="xs:string" name="classpathref" use="optional"/>
+        <xs:attribute type="xs:string" name="dir" use="optional"/>
+        <xs:attribute type="xs:string" name="failonerror" use="optional"/>
+        <xs:attribute type="xs:string" name="fork" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="antcallType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="target" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="javacType" mixed="true">
+    <xs:sequence>
+      <xs:element type="compilerargType" name="compilerarg" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="classpathref" use="optional"/>
+    <xs:attribute type="xs:string" name="debug" use="optional"/>
+    <xs:attribute type="xs:string" name="srcdir" use="optional"/>
+    <xs:attribute type="xs:string" name="message" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="touchType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="file"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="envType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="key"/>
+        <xs:attribute type="xs:string" name="path"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="propertyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="environment"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="conditionType" mixed="true">
+    <xs:sequence>
+      <xs:element type="antversionType" name="antversion" minOccurs="0"/>
+      <xs:element type="notType" name="not" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="property" use="optional"/>
+    <xs:attribute type="xs:string" name="message" use="optional"/>
+    <xs:attribute type="xs:string" name="unless" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="compilerargType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="execType">
+    <xs:sequence>
+      <xs:element type="argType" name="arg"/>
+      <xs:element type="envType" name="env"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="executable"/>
+  </xs:complexType>
+</xs:schema>

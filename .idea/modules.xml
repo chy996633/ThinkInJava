@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/10-advanced-puzzlers/10-advanced-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/10-advanced-puzzlers/10-advanced-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/2-expressive-puzzlers/2-expressive-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/2-expressive-puzzlers/2-expressive-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/3-puzzlers-with-character/3-puzzlers-with-character.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/3-puzzlers-with-character/3-puzzlers-with-character.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/4-loopy-puzzlers/4-loopy-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/4-loopy-puzzlers/4-loopy-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/5-exceptional-puzzlers/5-exceptional-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/5-exceptional-puzzlers/5-exceptional-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/6-classy-puzzlers/6-classy-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/6-classy-puzzlers/6-classy-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/7-library-puzzlers/7-library-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/7-library-puzzlers/7-library-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/8-classier-puzzlers/8-classier-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/8-classier-puzzlers/8-classier-puzzlers.iml" />
+      <module fileurl="file://E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/9-more-library-puzzlers/9-more-library-puzzlers.iml" filepath="E:/我的书/技术书籍/书籍附带代码/java-puzzlers/java-puzzlers/9-more-library-puzzlers/9-more-library-puzzlers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThinkInJava.iml" filepath="$PROJECT_DIR$/ThinkInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javapuzzles/src/main/main.iml" filepath="$PROJECT_DIR$/javapuzzles/src/main/main.iml" />
+    </modules>
+  </component>
+</project>
