@@ -8,16 +8,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class lambdaTest {
-
-	public void test() throws ClassNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException {
-
-		Class<?> cla = Class.forName("com.code.Sequence");
-		Method me = cla.getMethod("SequenceSelector");
-
-		me.invoke(cla.newInstance());
-	}
 
 	public static void filter(List<String> names,Predicate condition){
 		names.stream().filter(
@@ -25,6 +20,11 @@ public class lambdaTest {
 		)
 		.forEach((name) -> System.out.println(name + " "));
 	}
+
+
+
+
+
 	
 	public static void main(String[] args) {
 //			new Test().test();
@@ -36,7 +36,7 @@ public class lambdaTest {
 //			System.out.println("Light.Camera,Action!!");
 //		});
 
-//		List<String> languages = Arrays.<String>asList("Java","Sacle","C++","Haskell","Lisp");
+//		List<String> languages = Arrays.asList("Java","Sacle","C++","Haskell","Lisp");
 //		System.out.println("Language which starts with J");
 //		filter(languages,(str)->str.startsWith("J"));
 
@@ -53,7 +53,28 @@ public class lambdaTest {
 //		System.out.println(System.getProperty("user.dir"));
 
 
+		Stream<List<Integer>> inputStream = Stream.of(
+				Arrays.asList(1),
+				Arrays.asList(2, 3),
+				Arrays.asList(4, 5, 6)
+		);
+		Stream<Integer> outputStream = inputStream.
+				flatMap((childList) -> childList.stream());
+
+		System.out.println(outputStream.collect(Collectors.toList()));
+
+		String[] arrays = new String[]{"aaa","bbb","ccc","abc"};
+		Arrays.sort(arrays,String::compareToIgnoreCase);
+		System.out.println(Arrays.toString(arrays));
+
+		List<String> languages = Arrays.asList("Java","Sacle","C++","Haskell","Lisp");
+		languages.stream().map(String::toLowerCase);
+
+
 
 
 	}
+
+
+
 }
