@@ -14,6 +14,10 @@ public class Test {
      */
 
     public static void main(String[] args) {
+
+
+        System.out.println("1 >>> 8 = "+ (byte)(1 >>>8) );
+
         Test t = new Test("1");
 
 //        b();

@@ -40,17 +40,25 @@ public class StringTest {
 
         StringTest st = new StringTest();
         // recursion error using this
-//        ArrayList<InfiniteRecursionError> arrayList = new ArrayList<>();
-//        for (int i = 0; i < 10; i++) {
-//            arrayList.add(new InfiniteRecursionError());
-//        }
-//        System.out.println(arrayList);
+        ArrayList<InfiniteRecursionError> arrayList = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            arrayList.add(new InfiniteRecursionError());
+        }
+        System.out.println(arrayList);
 
         //use regExp in file
         st.regExpUsedInFile(new File("C:\\Python34\\NEWS.txt"));
 
+        String a = new String("abc");
+        st.change(a);
+        System.out.println(a);
 
     }
+
+    public void change(String a){
+        a = "change";
+    }
+
 }
 
 class InfiniteRecursionError{
@@ -58,7 +66,7 @@ class InfiniteRecursionError{
     @Override
     public String toString() {
 //        right way
-//        return "infiniteRecursion address: "+super.toString() +"\n";
-        return "infiniteRecursion address: "+this  +"\n";
+        return "infiniteRecursion address: "+super.toString() +"\n";
+//        return "infiniteRecursion address: "+this  +"\n";
     }
 }
