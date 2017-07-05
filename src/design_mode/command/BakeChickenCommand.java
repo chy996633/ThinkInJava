@@ -10,7 +10,7 @@ public class BakeChickenCommand extends Command {
 
     @Override
     void execute() {
-        receiver.bakeChickenWing();
+        ((Barbecuer)receiver).bakeChickenWing();
     }
 
     @Override

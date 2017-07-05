@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by backstop-samuel on 7/4/17.
  */
-public class Waiter {
+public class Waiter implements Invoker{
 
     ArrayList<Command> commands = new ArrayList<>();
 

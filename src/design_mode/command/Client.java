@@ -3,7 +3,7 @@ package design_mode.command;
 /**
  * Created by backstop-samuel on 7/4/17.
  */
-public class Main {
+public class Client {
 
     public static void main(String[] args) {
         //ready to do bussiness

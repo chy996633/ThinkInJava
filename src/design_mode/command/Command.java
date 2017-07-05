@@ -5,9 +5,9 @@ package design_mode.command;
  */
 public abstract class Command {
 
-    protected Barbecuer receiver;
+    protected Receiver receiver;
 
-    public Command(Barbecuer receiver){
+    public Command(Receiver receiver){
         this.receiver = receiver;
     }
 

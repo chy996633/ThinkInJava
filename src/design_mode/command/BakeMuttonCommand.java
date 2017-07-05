@@ -11,7 +11,7 @@ public class BakeMuttonCommand extends Command {
 
     @Override
     void execute() {
-        receiver.bakeMutton();
+        ((Barbecuer)receiver).bakeMutton();
     }
 
     @Override
