@@ -3,22 +3,16 @@ package design_mode.state;
 /**
  * Created by backstop-samuel on 7/5/17.
  */
-public class MorningState implements State {
+public class MustRestState implements State {
+    private Integer time;
 
-    public MorningState(Integer time) {
+    public MustRestState(Integer time) {
         this.time = time;
     }
 
-    private Integer time;
-
     @Override
     public void handle(Context context) {
-        if (time < 10) {
-            System.out.println(String.format(state, time, "棒棒哒"));
-        }else{
-            context.setState(new LunchTimeState(time));
-            context.handle();
-        }
+        System.out.println(String.format(state, time, "下班途中,公司规定20点之前必须下班"));
     }
 
     @Override

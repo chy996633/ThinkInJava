@@ -13,7 +13,12 @@ public class OverTimeState implements State {
 
     @Override
     public void handle(Context context) {
-        System.out.println(String.format(state, time, "疲劳加班中"));
+        if (time < 20) {
+            System.out.println(String.format(state, time, "疲劳加班中"));
+        }else {
+            context.setState(new MustRestState(time));
+            context.handle();
+        }
     }
 
     @Override

@@ -15,7 +15,7 @@ public class LunchTimeState implements State{
         if (time < 13) {
             System.out.println(String.format(state, time, "打瞌睡"));
         }else {
-            context.setState(new AfternoonState(14));
+            context.setState(new AfternoonState(time));
             context.handle();
         }
     }

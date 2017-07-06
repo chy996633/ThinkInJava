@@ -13,13 +13,13 @@ public class AfternoonState implements State {
 
     @Override
     public void handle(Context context) {
-        if (time < 15){
+        if (time < 15) {
             System.out.println(String.format(state, time, "创意丰富"));
-        }else {
-            if (context.getTaskFinished()) {
-                context.setState(new RestState(18));
-            }else{
-                context.setState(new OverTimeState(18));
+        } else {
+            if (((WorkEfficiency)context).getTaskFinished()) {
+                context.setState(new RestState(time));
+            } else {
+                context.setState(new OverTimeState(time));
             }
             context.handle();
         }

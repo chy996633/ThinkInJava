@@ -17,8 +17,10 @@ public class Company {
         workEfficiency.handle();
         state = workEfficiency.getState();
         state.setTime(16);
-//        workEfficiency.setTaskFinished(false);
-
+        workEfficiency.setTaskFinished(false);
+        workEfficiency.handle();
+        state = workEfficiency.getState();
+        state.setTime(21);
         workEfficiency.handle();
     }
 

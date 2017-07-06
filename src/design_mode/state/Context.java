@@ -11,8 +11,4 @@ public interface Context {
 
     void setState(State state);
 
-    Boolean getTaskFinished();
-
-    void setTaskFinished(Boolean taskFinished);
-
 }
