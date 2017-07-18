@@ -1,10 +1,10 @@
 package com.code;
 
 import net.mindview.util.RandomGenerator;
-import org.junit.Assert;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  * Created by backstop-samuel on 6/14/17.
@@ -19,7 +19,7 @@ public class CopyTest {
         ArrayList<Student> collection = new ArrayList<>();
         do {
             Student student = new Student(strGen.next(),intGen.next());
-            collection.add(student);
+            collection.add((Student) student);
             i++;
         }while (i<10);
         return collection;
@@ -40,14 +40,35 @@ public class CopyTest {
 
     }
 
+    public void testDeepClone(){
+        ArrayList<Student> origin =  getStudentArrayList();
+        ArrayList<Student> newArray = new ArrayList<>();
+        Iterator<Student> itr = origin.iterator();
+        while (itr.hasNext()){
+            try {
+                newArray.add((Student) itr.next().clone());
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("before set origin, newArrays:"+Arrays.toString(newArray.toArray()));
+        Student item = new Student("name",18);
+        origin.get(0).setName("name");
+        origin.get(0).setAge(18);
+        System.out.println("after set origin, newArrays:"+Arrays.toString(newArray.toArray()));
+
+    }
+
     public static void main(String[] args) {
         CopyTest copyTest = new CopyTest();
-        copyTest.testNewArrayList();
+//        copyTest.testNewArrayList();
+
+        copyTest.testDeepClone();
 
     }
 
 
-    class Student{
+    class Student implements Cloneable{
         String name;
         Integer age;
 
@@ -75,6 +96,11 @@ public class CopyTest {
         @Override
         public String toString() {
             return "name:"+name+" age:"+age;
+        }
+
+        @Override
+        protected Object clone() throws CloneNotSupportedException {
+            return super.clone();
         }
     }
 
