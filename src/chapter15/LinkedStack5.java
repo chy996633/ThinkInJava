@@ -1,4 +1,4 @@
-// generics/LinkedStack5.java
+package chapter15;// generics/LinkedStack5.java
 // TIJ4 Chapter Generics, Exercise 5, page 626
 /* Remove the type parameter on the Node class and modify the rest of the
 * code in LinkedStack.java to show that an inner class has access to the
@@ -7,19 +7,19 @@
 
 public class LinkedStack5<T> {
 	// make Node a nonstatic class to access nonstatic T:
-	private class Node<T> {
-		T item;
-		Node next;
+	private class Node<U> {
+		U item;
+		Node<U> next;
 		Node() { item = null; next = null; }
-		Node(T item, Node next) {
+		Node(U item, Node<U> next) {
 			this.item = item;
 			this.next = next;
 		}
 		boolean end() { return item == null && next == null; }
 	}
-	private Node top = new Node(); // End sentinel
+	private Node<T> top = new Node<T>(); // End sentinel
 	public void push(T item) {
-		top = new Node(item, top);
+		top = new Node<T>(item, top);
 	}
 	public T pop() {
 		T result = top.item;
