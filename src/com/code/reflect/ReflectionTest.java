@@ -62,8 +62,5 @@ public class ReflectionTest {
         }
     }
 
-    static void trytoChange(String str) {
-        str = "123";
-    }
 
 }
