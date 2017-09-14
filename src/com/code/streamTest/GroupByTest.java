@@ -1,18 +1,12 @@
 package com.code.streamTest;
 
 import java.sql.Timestamp;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalField;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import javax.ejb.Local;
 
 public class GroupByTest {
 
@@ -21,22 +15,23 @@ public class GroupByTest {
 
         List<Demo> list = new ArrayList<>();
         LocalDateTime now = LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES);
-        Demo demo = new Demo(Timestamp.valueOf(now),"Beijing",66.40);
+        Demo demo = new Demo(Timestamp.valueOf(now), "Beijing", 66.40);
         list.add(demo);
 
-        demo = new Demo(Timestamp.valueOf(now.plusMinutes(10)),"Beijing",60.40);
+        demo = new Demo(Timestamp.valueOf(now.plusMinutes(10)), "Beijing", 60.40);
         list.add(demo);
 
-        demo = new Demo(Timestamp.valueOf(now.plusMinutes(16)),"Beijing",80.40);
+        demo = new Demo(Timestamp.valueOf(now.plusMinutes(16)), "Beijing", 80.40);
         list.add(demo);
 
-        Map map = list.stream().collect(Collectors.groupingBy(e -> roundUp(e.timestamp.toLocalDateTime())));
+        Map map = list.stream()
+                .collect(Collectors.groupingBy(e -> roundUp(e.timestamp.toLocalDateTime())));
 
         System.out.println(map);
     }
 
 
-    public static String roundUp(LocalDateTime time){
+    public static String roundUp(LocalDateTime time) {
         LocalDateTime temp;
         int minutesSinceLastWhole15 = time.getMinute() % 15;
         if (minutesSinceLastWhole15 >= 8) { // round up
@@ -47,12 +42,13 @@ public class GroupByTest {
         return temp.toString();
     }
 
-    static class Demo{
+    static class Demo {
+
         Timestamp timestamp;
         String city;
         Double price;
 
-        public Demo(Timestamp timestamp, String city, Double price){
+        public Demo(Timestamp timestamp, String city, Double price) {
             this.timestamp = timestamp;
             this.city = city;
             this.price = price;
@@ -60,7 +56,7 @@ public class GroupByTest {
 
         @Override
         public String toString() {
-            return "{ timestamp:"+timestamp+" city:"+city+" price:"+price+" }";
+            return "{ timestamp:" + timestamp + " city:" + city + " price:" + price + " }";
         }
     }
 
