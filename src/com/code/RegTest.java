@@ -8,16 +8,16 @@ import java.util.regex.Pattern;
  */
 public class RegTest {
 
+    String pattern = "^\\d*\\d*\\d*$";
+    String numPattern = "[1-35]";
+    String blankPattern = "er\\b";
+    String emailPat = "[\\w\\.\\-]+@([\\w\\-]+\\.)+[\\w\\-]+";
+    String abPat = "[ab]*";
+    String similarWordPat = "worl?d";
+    static String valueRegex = "(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}\\+\\d{2}:\\d{2})";
+
+
     public void testStrArray(String[] arr){
-        String pattern = "^\\d*\\d*\\d*$";
-        String numPattern = "[1-35]";
-        String blankPattern = "er\\b";
-        String emailPat = "[\\w\\.\\-]+@([\\w\\-]+\\.)+[\\w\\-]+";
-        String abPat = "[ab]*";
-        String similarWordPat = "worl?d";
-
-
-
         for(String str :arr){
             if(! str.matches(similarWordPat)){
                 System.out.println(str+" not match");
@@ -27,6 +27,13 @@ public class RegTest {
         }
 
     }
+
+    public static void replaceValueRegex(String message){
+        String result = message.replaceAll(valueRegex,"null");
+        System.out.println(result);
+    }
+
+
 
     public boolean test(){
         String catPat = "cat";
@@ -40,6 +47,16 @@ public class RegTest {
         String[] arr = {"word","ssds@sina.com","13477754148","137-8885-8854"};
 //        test.testStrArray(arr);
         System.out.println(test.test());
+
+        String message = "{\n"
+                + "        \"mCheckInTime\": null,\n"
+                + "        \"mCheckOutTime\": null,\n"
+                + "        \"mLateArrivalTime\": \"2017-09-14T18:00:00.000+05:00\",\n"
+                + "        \"mNumberOfBeds\": 0\n"
+                + "      }";
+
+        replaceValueRegex(message);
+
 
 
     }

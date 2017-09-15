@@ -1,5 +1,7 @@
 package beanUtils;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
@@ -12,6 +14,8 @@ public class BeanUtilsTest {
 
     public static void main(String[] args) {
         Employee employee = new Employee();
+        Address address = new Address("Changsha");
+
         try {
 
             System.out.println((String) PropertyUtils.getSimpleProperty(employee, "firstName"));
@@ -20,6 +24,15 @@ public class BeanUtilsTest {
             System.out.println(PropertyUtils.getMappedProperty(employee, "address(home)"));
             System.out.println(PropertyUtils.getNestedProperty(employee, "address(home).city"));
 
+            Map map = new HashMap<String,String>();
+            map.put("city","Wuxi");
+            map.put("areaCode","0510");
+            map.put("rented","true");
+
+//            BeanUtils.populate(address,map);
+            MyBeanUtils.populate(address,map);
+
+            System.out.println(address);
 
 
 

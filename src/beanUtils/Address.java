@@ -5,6 +5,8 @@ package beanUtils;
  */
 public class Address {
     private String city;
+    Integer areaCode;
+    private boolean rented;
 
     public Address(String s) {
         this.city = s;
@@ -18,8 +20,24 @@ public class Address {
         this.city = city;
     }
 
+    public Integer getAreaCode() {
+        return areaCode;
+    }
+
+    public void setAreaCode(Integer areaCode) {
+        this.areaCode = areaCode;
+    }
+
+    public Boolean getRented() {
+        return rented;
+    }
+
+    public void setRented(Boolean rented) {
+        this.rented = rented;
+    }
+
     @Override
     public String toString() {
-        return city;
+        return "city:"+city+" areaCode:"+areaCode+" rented:"+ rented;
     }
 }

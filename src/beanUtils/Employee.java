@@ -7,13 +7,13 @@ import java.util.Map;
  * Created by Andrew on 2015/12/4.
  */
 public class Employee {
-    String firstName;
+    private String firstName;
     String lastName;
     Employee[] subordinate;
     Map<String, Address> address;
 
     public Employee(){
-        firstName = "Adnrew";
+        firstName = "Andrew";
         lastName = "Chen";
         subordinate = new Employee[]{new Employee("Shirley","Liu"),new Employee("Alex","Wang")};
         address = new HashMap<>();
