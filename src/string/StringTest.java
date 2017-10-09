@@ -38,6 +38,10 @@ public class StringTest {
 
     public static void main(String[] args) {
 
+        String str1 = "hello";
+        String str2 = new String("hello");
+        System.err.println(str1 == str2);
+
         StringTest st = new StringTest();
         // recursion error using this
         ArrayList<InfiniteRecursionError> arrayList = new ArrayList<>();
