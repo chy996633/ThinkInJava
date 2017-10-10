@@ -43,6 +43,11 @@ public class StringTest {
         System.err.println(str1 == str2);
 
         StringTest st = new StringTest();
+
+        int b = 20;
+        st.changeInt(b);
+        System.out.println("b="+b);
+
         // recursion error using this
         ArrayList<InfiniteRecursionError> arrayList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -62,6 +67,8 @@ public class StringTest {
     public void change(String a){
         a = "change";
     }
+
+    public void changeInt(int a){a = 0;}
 
 }
 
