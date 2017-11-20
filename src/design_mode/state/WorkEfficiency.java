@@ -5,9 +5,24 @@ package design_mode.state;
  */
 public class WorkEfficiency implements Context{
 
-    private State state = new MorningState(8);
+    private State state;
 
     private Boolean taskFinished = true;
+
+    private Integer time;
+
+    public WorkEfficiency(){
+        this.time = 8;
+        this.state = new MorningState();
+    }
+
+    public Integer getTime() {
+        return time;
+    }
+
+    public void setTime(Integer time) {
+        this.time = time;
+    }
 
     public Boolean getTaskFinished() {
         return taskFinished;

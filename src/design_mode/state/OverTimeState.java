@@ -5,29 +5,13 @@ package design_mode.state;
  */
 public class OverTimeState implements State {
 
-    public OverTimeState(Integer time) {
-        this.time = time;
-    }
-
-    private Integer time;
-
     @Override
-    public void handle(Context context) {
-        if (time < 20) {
-            System.out.println(String.format(state, time, "疲劳加班中"));
+    public void handle(WorkEfficiency workEfficiency) {
+        if (workEfficiency.getTime() < 20) {
+            System.out.println(String.format(state, workEfficiency.getTime(), "疲劳加班中"));
         }else {
-            context.setState(new MustRestState(time));
-            context.handle();
+            workEfficiency.setState(new MustRestState());
+            workEfficiency.handle();
         }
-    }
-
-    @Override
-    public Integer getTime() {
-        return time;
-    }
-
-    @Override
-    public void setTime(Integer time) {
-        this.time = time;
     }
 }

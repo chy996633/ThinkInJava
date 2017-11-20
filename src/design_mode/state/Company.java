@@ -9,18 +9,14 @@ public class Company {
 
         WorkEfficiency workEfficiency = new WorkEfficiency();
         workEfficiency.handle();
-        State state = workEfficiency.getState();
-        state.setTime(11);
+        workEfficiency.setTime(10);
         workEfficiency.handle();
-        state = workEfficiency.getState();
-        state.setTime(14);
+        workEfficiency.setTime(14);
         workEfficiency.handle();
-        state = workEfficiency.getState();
-        state.setTime(16);
+        workEfficiency.setTime(16);
         workEfficiency.setTaskFinished(false);
         workEfficiency.handle();
-        state = workEfficiency.getState();
-        state.setTime(21);
+        workEfficiency.setTime(21);
         workEfficiency.handle();
     }
 

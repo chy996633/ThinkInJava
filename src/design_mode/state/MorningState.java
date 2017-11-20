@@ -5,29 +5,13 @@ package design_mode.state;
  */
 public class MorningState implements State {
 
-    public MorningState(Integer time) {
-        this.time = time;
-    }
-
-    private Integer time;
-
     @Override
-    public void handle(Context context) {
-        if (time < 10) {
-            System.out.println(String.format(state, time, "棒棒哒"));
+    public void handle(WorkEfficiency workEfficiency) {
+        if (workEfficiency.getTime() < 10) {
+            System.out.println(String.format(state, workEfficiency.getTime(), "棒棒哒"));
         }else{
-            context.setState(new LunchTimeState(time));
-            context.handle();
+            workEfficiency.setState(new LunchTimeState());
+            workEfficiency.handle();
         }
-    }
-
-    @Override
-    public Integer getTime() {
-        return time;
-    }
-
-    @Override
-    public void setTime(Integer time) {
-        this.time = time;
     }
 }

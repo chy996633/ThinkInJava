@@ -7,10 +7,6 @@ public interface State {
 
     String state = "现在是%d点,工作状态是:%s";
 
-    void handle(Context context);
-
-    Integer getTime();
-
-    void setTime(Integer time);
+    void handle(WorkEfficiency workEfficiency);
 
 }
