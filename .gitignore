@@ -8,3 +8,5 @@ classes/**
 *.project
 *.iml
 *.class
+lib/cglib-3.2.5.jar
+lib/system-rules-1.16.0.jar

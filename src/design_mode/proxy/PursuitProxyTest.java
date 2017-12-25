@@ -14,7 +14,6 @@ public class PursuitProxyTest {
     @Rule
     public SystemOutRule log = new SystemOutRule().enableLog();
 
-
     @Before
     public void setUp(){
         proxy = new PursuitProxy(new SchoolGirl("Mercy"));
