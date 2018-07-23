@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * add VM options: -Dcom.sun.management.jmxremote
+ */
 public class JConsoleTraceTet {
 
     static class OOMObject {
@@ -13,7 +16,8 @@ public class JConsoleTraceTet {
         while (true) {
             for (int i = 0; i < 1000; i++) {
                 list.add(new OOMObject());
-                Thread.sleep(50);
+                System.out.println("add OOMObject "+ i );
+                Thread.sleep(1000);
             }
             System.gc();
         }
