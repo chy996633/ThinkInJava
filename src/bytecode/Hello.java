@@ -1,4 +1,4 @@
-package class_load;
+package bytecode;
 
 public class Hello
 {
