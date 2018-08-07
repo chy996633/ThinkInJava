@@ -1,10 +1,16 @@
 package jvm.parse_classfile;
 
 import java.io.FileInputStream;
+import java.util.HashMap;
 
 public class ConstantClassInfo implements Constant {
 
     int index;
+    HashMap<Integer, Constant> constantMap;
+
+    public ConstantClassInfo(HashMap<Integer, Constant> constantMap) {
+        this.constantMap = constantMap;
+    }
 
     @Override
     public void readFrom(FileInputStream fileInputStream) {
@@ -14,5 +20,10 @@ public class ConstantClassInfo implements Constant {
     @Override
     public Integer getTag() {
         return 7;
+    }
+
+    @Override
+    public String toString() {
+        return constantMap.get(index-1).toString();
     }
 }

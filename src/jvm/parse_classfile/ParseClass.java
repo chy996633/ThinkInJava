@@ -40,7 +40,7 @@ public class ParseClass {
                     c = new ConstantIntegerInfo();
                     break;
                 case 7:
-                    c = new ConstantClassInfo();
+                    c = new ConstantClassInfo(constantMap);
                     break;
                 case 12:
                     c = new ConstantNameAndTypeInfo();
@@ -53,6 +53,7 @@ public class ParseClass {
         }
 
         String accessFlag = AccessFlag.getFlagName(ParseClass.readU2(fileInputStream));
+
         String klass = constantMap.get(ParseClass.byteToShort(ParseClass.readU2(fileInputStream))).toString();
 
 
