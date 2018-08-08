@@ -2,7 +2,9 @@ package jvm.parse_classfile;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import javax.persistence.Access;
 import javax.xml.bind.DatatypeConverter;
 
@@ -49,13 +51,40 @@ public class ParseClass {
                     System.out.println("unfound tag: " + tag);
             }
             c.readFrom(fileInputStream);
-            constantMap.put(i, c);
+            constantMap.put(i + 1, c);
         }
 
         String accessFlag = AccessFlag.getFlagName(ParseClass.readU2(fileInputStream));
+        String klass = constantMap.get(ParseClass.byteToShort(ParseClass.readU2(fileInputStream)))
+                .toString();
+        String superKlass = constantMap
+                .get(ParseClass.byteToShort(ParseClass.readU2(fileInputStream))).toString();
+        Integer interfaceCount = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+        List<String> interfaceNameList = new ArrayList<>();
+        for (int i = 0; i < interfaceCount; i++) {
+            interfaceNameList
+                    .add(constantMap.get(ParseClass.byteToShort(ParseClass.readU2(fileInputStream)))
+                            .toString());
+        }
 
-        String klass = constantMap.get(ParseClass.byteToShort(ParseClass.readU2(fileInputStream))).toString();
+        s.append("\nclass accessFlag: ").append(accessFlag)
+                .append("\nclass: ").append(klass)
+                .append("\nsuper class: ").append(superKlass)
+                .append("\ninterfaces: ").append(interfaceNameList.toString());
 
+        Integer fieldCount = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+        s.append("\nfield: ");
+        for (int i = 0; i < fieldCount; i++) {
+            String fieldAccessFlag = AccessFlag.getFlagName(ParseClass.readU2(fileInputStream));
+            Integer nameIndex = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+            Integer descriptorIndex = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+            Integer attributeCount = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+            for (int j = 0; j < attributeCount; j++) {
+                //read attribute info
+            }
+            Field field = new Field(fieldAccessFlag, nameIndex, descriptorIndex, attributeCount, constantMap);
+            s.append(field.toString()).append("\n");
+        }
 
         System.out.println(s);
 

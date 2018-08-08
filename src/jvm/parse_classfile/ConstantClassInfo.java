@@ -24,6 +24,6 @@ public class ConstantClassInfo implements Constant {
 
     @Override
     public String toString() {
-        return constantMap.get(index-1).toString();
+        return constantMap.get(index).toString();
     }
 }

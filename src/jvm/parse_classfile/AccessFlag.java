@@ -4,7 +4,17 @@ public class AccessFlag {
 
     static int ACC_PUBLIC = 0x0001;
 
+    static int ACC_PRIVATE = 0x0002;
+
+    static int ACC_PROTECTED = 0x0004;
+
+    static int ACC_STATIC = 0x0008;
+
     static int ACC_FINAL = 0x0010;
+
+    static int ACC_VOLATILE = 0x0040;
+
+    static int ACC_TRANSIENT = 0x0080;
 
     static int ACC_SUPER = 0x0020;
 
@@ -21,9 +31,19 @@ public class AccessFlag {
     public static String getFlagName(byte[] flag) {
         assert flag.length == 2;
         String result = "";
-        result += (ParseClass.byteToShort(flag) & ACC_PUBLIC) != 0 ? "ACC_PUBLIC|" : "" ;
-        result += (ParseClass.byteToShort(flag) & ACC_FINAL) != 0 ? "ACC_FINAL|" : "" ;
-        result += (ParseClass.byteToShort(flag) & ACC_SUPER) != 0 ? "ACC_SUPER|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_PUBLIC) != 0 ? "public|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_FINAL) != 0 ? "final|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_SUPER) != 0 ? "super|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_PRIVATE) != 0 ? "private|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_PROTECTED) != 0 ? "protected|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_STATIC) != 0 ? "static|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_VOLATILE) != 0 ? "volatile|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_TRANSIENT) != 0 ? "transient|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_INTERFACE) != 0 ? "interface|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_ABSTRACT) != 0 ? "abstract|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_SYNTHETIC) != 0 ? "synthetic|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_ANNOTATION) != 0 ? "annotation|" : "" ;
+        result += (ParseClass.byteToShort(flag) & ACC_ENUM) != 0 ? "enum|" : "" ;
         return result;
     }
 
