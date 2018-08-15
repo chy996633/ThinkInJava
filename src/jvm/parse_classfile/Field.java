@@ -1,6 +1,7 @@
 package jvm.parse_classfile;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Field {
 
@@ -11,6 +12,8 @@ public class Field {
     Integer descriptorIndex;
 
     Integer attrCount;
+
+    List<String> attrList;
 
     HashMap<Integer, Constant> constantPool;
 
@@ -29,12 +32,13 @@ public class Field {
     }
 
     public Field(String fieldAccessFlag, Integer nameIndex, Integer descriptorIndex,
-            Integer attrCount, HashMap<Integer, Constant> constantPool) {
+            Integer attrCount, HashMap<Integer, Constant> constantPool, List<String> attrList) {
         this.fieldAccessFlag = fieldAccessFlag;
         this.nameIndex = nameIndex;
         this.descriptorIndex = descriptorIndex;
         this.attrCount = attrCount;
         this.constantPool = constantPool;
+        this.attrList = attrList;
     }
 
     @Override
@@ -45,7 +49,9 @@ public class Field {
     }
 
     public String getDescriptor() {
-        String parsedResult = descriptorParseMap.get(constantPool.get(descriptorIndex).toString());
+        String constantStr = constantPool.get(descriptorIndex).toString();
+        //fit both method and field
+        String parsedResult = descriptorParseMap.get(String.valueOf(constantStr.charAt(constantStr.length() - 1)));
         return parsedResult == null
                 // object type, like Ljava/String/Object
                 ? constantPool.get(descriptorIndex).toString()
