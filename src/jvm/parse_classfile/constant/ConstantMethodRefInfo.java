@@ -1,6 +1,8 @@
-package jvm.parse_classfile;
+package jvm.parse_classfile.constant;
 
 import java.io.FileInputStream;
+import jvm.parse_classfile.ParseClass;
+import jvm.parse_classfile.U2;
 
 public class ConstantMethodRefInfo implements Constant {
 
@@ -10,8 +12,8 @@ public class ConstantMethodRefInfo implements Constant {
 
     @Override
     public void readFrom(FileInputStream fileInputStream) {
-        classInfoIndex = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
-        nameAndTypeIndex = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+        classInfoIndex = U2.read(fileInputStream);
+        nameAndTypeIndex = U2.read(fileInputStream);
     }
 
     @Override

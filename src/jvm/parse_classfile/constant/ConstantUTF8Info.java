@@ -1,8 +1,9 @@
-package jvm.parse_classfile;
+package jvm.parse_classfile.constant;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import javax.xml.bind.DatatypeConverter;
+import jvm.parse_classfile.ParseClass;
+import jvm.parse_classfile.U2;
 
 public class ConstantUTF8Info implements Constant {
 
@@ -12,7 +13,7 @@ public class ConstantUTF8Info implements Constant {
 
     @Override
     public void readFrom(FileInputStream fileInputStream) {
-        length = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+        length = U2.read(fileInputStream);
         chars = new byte[length];
         try {
             fileInputStream.read(chars);

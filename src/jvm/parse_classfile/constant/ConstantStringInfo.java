@@ -1,7 +1,9 @@
-package jvm.parse_classfile;
+package jvm.parse_classfile.constant;
 
 import java.io.FileInputStream;
 import java.util.HashMap;
+import jvm.parse_classfile.ParseClass;
+import jvm.parse_classfile.U2;
 
 public class ConstantStringInfo implements Constant {
 
@@ -15,7 +17,7 @@ public class ConstantStringInfo implements Constant {
 
     @Override
     public void readFrom(FileInputStream fileInputStream) {
-        index = ParseClass.byteToShort(ParseClass.readU2(fileInputStream));
+        index = U2.read(fileInputStream);
         str = constantMap.get(index).toString();
     }
 

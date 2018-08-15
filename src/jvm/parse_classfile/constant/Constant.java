@@ -1,4 +1,4 @@
-package jvm.parse_classfile;
+package jvm.parse_classfile.constant;
 
 import java.io.FileInputStream;
 

@@ -1,7 +1,8 @@
-package jvm.parse_classfile;
+package jvm.parse_classfile.field;
 
 import java.util.HashMap;
 import java.util.List;
+import jvm.parse_classfile.constant.Constant;
 
 public class Field {
 
