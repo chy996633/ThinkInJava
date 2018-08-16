@@ -1,6 +1,7 @@
 package jvm.parse_classfile;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +20,7 @@ import jvm.parse_classfile.field.Field;
 
 public class ParseClass {
 
-    public static void main(String[] args) throws IOException {
+    public String parseClassFile() throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(
                 "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
 //                "/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/parse_classfile/ClassAndFieldAccessFlag.class");
@@ -159,7 +160,12 @@ public class ParseClass {
         }
 
         System.out.println(s);
+        return s.toString();
+    }
 
+    public static void main(String[] args) throws IOException {
+        ParseClass parseClass = new ParseClass();
+        parseClass.parseClassFile();
 
     }
 
