@@ -2,6 +2,7 @@ package jvm.parse_classfile;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import javax.xml.bind.DatatypeConverter;
 
 public class U2 {
 
@@ -21,6 +22,22 @@ public class U2 {
     }
 
     public static int byteToShort(byte[] array) {
-        return ((array[0] & 0xff) >> 4) + array[1] & 0xff;
+        int num = 0;
+        for (int i = 0; i< array.length; i++){
+            num <<= 8;
+            num |= (array[i] & 0xff);
+        }
+        return num;
     }
+
+    public static String readString(FileInputStream fileInputStream) {
+        byte[] u2 = new byte[2];
+        try {
+            fileInputStream.read(u2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return DatatypeConverter.printHexBinary(u2);
+    }
+
 }
