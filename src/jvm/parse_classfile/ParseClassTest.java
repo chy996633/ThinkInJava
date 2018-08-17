@@ -22,11 +22,11 @@ public class ParseClassTest {
                     + "interfaces: []\n"
                     + "field: private  int m\n"
                     + "\n"
-                    + " LineNumberTable 00 01 00 00 00 03\n"
+                    + " LineNumberTable startPC: 0 lineNumber: 3 \n"
                     + "code index: 0x2A 0xB7 0x00 0x01 0xB1\n"
                     + "methods: public  void <init>\n"
                     + "\n"
-                    + " LineNumberTable 00 01 00 00 00 08\n"
+                    + " LineNumberTable startPC: 0 lineNumber: 8 \n"
                     + "code index: 0x2A 0xB4 0x00 0x02 0x04 0x60 0xAC\n"
                     + "methods: public  int inc\n", result);
         } catch (FileNotFoundException e) {

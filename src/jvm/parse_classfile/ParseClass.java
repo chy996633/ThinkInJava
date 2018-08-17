@@ -20,22 +20,41 @@ import jvm.parse_classfile.field.Field;
 
 public class ParseClass {
 
+    private String magicCode;
+
+    private HashMap<Integer, Constant> constantMap;
+    private int minorVersion;
+    private int majorVersion;
+    private Integer constantPoolCount;
+    private byte[] accessFlagIndex;
+    private int thisClassIndex;
+    private int superClassIndex;
+    private int interfaceCount;
+    private int fieldCount;
+    private ArrayList<Field> fieldList;
+    private int methodCount;
+    private ArrayList<Field> methodList;
+
     public String parseClassFile() throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(
                 "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
 //                "/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/parse_classfile/ClassAndFieldAccessFlag.class");
         StringBuilder s = new StringBuilder();
-        s.append("magic: ")
-                .append(U4.readString(fileInputStream))
-                .append("\nminor_version: ")
-                .append(U2.read(fileInputStream))
-                .append("\nmajor_version: ")
-                .append(U2.read(fileInputStream));
+        magicCode = U4.readString(fileInputStream);
+        minorVersion = U2.read(fileInputStream);
+        majorVersion = U2.read(fileInputStream);
 
-        Integer constantPoolCount = U2.read(fileInputStream) - 1;
+        s.append("magic: ")
+                .append(magicCode)
+                .append("\nminor_version: ")
+                .append(minorVersion)
+                .append("\nmajor_version: ")
+                .append(majorVersion);
+
+        constantPoolCount = U2.read(fileInputStream) - 1;
         s.append("\nconstant_pool_count: ").append(constantPoolCount);
 
-        HashMap<Integer, Constant> constantMap = new HashMap<>();
+        constantMap = new HashMap<>();
         for (int i = 0; i < constantPoolCount; i++) {
             int tag = U1.readInt(fileInputStream);
             Constant c = null;
@@ -68,12 +87,15 @@ public class ParseClass {
             constantMap.put(i + 1, c);
         }
 
-        String accessFlag = ClassAndFieldAccessFlag.getFlagName(U2.readU2(fileInputStream));
-        String klass = constantMap.get(U2.read(fileInputStream))
+        accessFlagIndex = U2.readU2(fileInputStream);
+        String accessFlag = ClassAndFieldAccessFlag.getFlagName(accessFlagIndex);
+        thisClassIndex = U2.read(fileInputStream);
+        String klass = constantMap.get(thisClassIndex)
                 .toString();
+        superClassIndex = U2.read(fileInputStream);
         String superKlass = constantMap
-                .get(U2.read(fileInputStream)).toString();
-        Integer interfaceCount = U2.read(fileInputStream);
+                .get(superClassIndex).toString();
+        interfaceCount = U2.read(fileInputStream);
         List<String> interfaceNameList = new ArrayList<>();
         for (int i = 0; i < interfaceCount; i++) {
             interfaceNameList
@@ -86,7 +108,8 @@ public class ParseClass {
                 .append("\nsuper class: ").append(superKlass)
                 .append("\ninterfaces: ").append(interfaceNameList.toString());
 
-        Integer fieldCount = U2.read(fileInputStream);
+        fieldCount = U2.read(fileInputStream);
+        fieldList = new ArrayList<>();
         s.append("\nfield: ");
         for (int i = 0; i < fieldCount; i++) {
             String fieldAccessFlag = ClassAndFieldAccessFlag
@@ -103,10 +126,12 @@ public class ParseClass {
             }
             Field field = new Field(fieldAccessFlag, nameIndex, descriptorIndex, attributeCount,
                     constantMap, attributeList);
+            fieldList.add(field);
             s.append(field.toString()).append("\n");
         }
 
-        Integer methodCount = U2.read(fileInputStream);
+        methodCount = U2.read(fileInputStream);
+        methodList = new ArrayList<>();
         for (int i = 0; i < methodCount; i++) {
             String methodAccFlag = ClassAndFieldAccessFlag
                     .getMethodFlagName(U2.readU2(fileInputStream));
@@ -135,27 +160,22 @@ public class ParseClass {
                     Integer endPC = U2.read(fileInputStream);
                     Integer handlerPC = U2.read(fileInputStream);
                     Integer catchTypeIndex = U2.read(fileInputStream);
+                    ExceptionTable exceptionTable = new ExceptionTable(startPC, endPC, handlerPC, catchTypeIndex);
 
                 }
                 Integer codeAttributeCount = U2.read(fileInputStream);
                 for (int k = 0; k < codeAttributeCount; k++) {
                     //TODO read code attr
-                    Integer codeAttributeIndex = U2.read(fileInputStream);
-                    String codeAttribute = constantMap.get(codeAttributeIndex).toString();
-                    Integer codeAttrLength = U4.read(fileInputStream);
-                    String codeInfo = "";
-                    for (int l = 0; l < codeAttrLength; l++) {
-                        String codeAttrInfo = DatatypeConverter
-                                .printHexBinary(U1.read(fileInputStream));
-                        codeInfo += " " + codeAttrInfo;
-                    }
-                    s.append("\n " + codeAttribute + codeInfo);
+                    LineNumberTable lineNumberTable = new LineNumberTable(constantMap);
+                    lineNumberTable.read(fileInputStream);
+                    s.append("\n " + lineNumberTable.toString());
                 }
                 s.append("\n" + code);
                 attributeList.add(attribute);
             }
             Field method = new Field(methodAccFlag, nameIndex, descriptorIndex, attributeCount,
                     constantMap, attributeList);
+            methodList.add(method);
             s.append("\nmethods: " + method.toString()).append("\n");
         }
 
