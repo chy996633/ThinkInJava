@@ -68,6 +68,14 @@ public class LineNumberTable extends Attribute {
             this.lineNumber = U2.read(fileInputStream);
         }
 
+        public int getStartPC() {
+            return startPC;
+        }
+
+        public int getLineNumber() {
+            return lineNumber;
+        }
+
         @Override
         public String toString() {
             return "startPC: " + startPC + " lineNumber: " + lineNumber ;

@@ -35,7 +35,7 @@ public class ParseClass {
     private int methodCount;
     private ArrayList<Field> methodList;
 
-    public String parseClassFile() throws FileNotFoundException {
+    public String parseClassFile() throws Exception {
         FileInputStream fileInputStream = new FileInputStream(
                 "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
 //                "/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/parse_classfile/ClassAndFieldAccessFlag.class");
@@ -140,38 +140,49 @@ public class ParseClass {
             Integer attributeCount = U2.read(fileInputStream);
             List<String> attributeList = new ArrayList<>();
             for (int j = 0; j < attributeCount; j++) {
-                //read attribute info
                 Integer attributeIndex = U2.read(fileInputStream);
                 String attribute = constantMap.get(attributeIndex).toString();
-                Integer attrLength = U4.read(fileInputStream);
-                Integer maxStack = U2.read(fileInputStream);
-                Integer maxLocals = U2.read(fileInputStream);
-                Integer codeLength = U4.read(fileInputStream);
-                String code = "code index:";
-                for (int k = 0; k < codeLength; k++) {
-                    String byteCode = "0x" + DatatypeConverter
-                            .printHexBinary(U1.read(fileInputStream));
-                    code += " " + byteCode;
-                }
-                Integer exceptionTableLength = U2.read(fileInputStream);
-                for (int k = 0; k < exceptionTableLength; k++) {
-                    //TODO read exceptions
-                    Integer startPC = U2.read(fileInputStream);
-                    Integer endPC = U2.read(fileInputStream);
-                    Integer handlerPC = U2.read(fileInputStream);
-                    Integer catchTypeIndex = U2.read(fileInputStream);
-                    ExceptionTable exceptionTable = new ExceptionTable(startPC, endPC, handlerPC, catchTypeIndex);
+                switch (attribute) {
+                    case "Code":
+                        Code code = new Code();
+                        code.setAttributesLength(U4.read(fileInputStream));
+                        code.setMaxStack(U2.read(fileInputStream));
+                        code.setMaxLocals(U2.read(fileInputStream));
+                        code.setCodeLength(U4.read(fileInputStream));
+                        String codeStr = "code index:";
+                        for (int k = 0; k < code.getCodeLength(); k++) {
+                            String byteCode = "0x" + DatatypeConverter
+                                    .printHexBinary(U1.read(fileInputStream));
+                            code.addCodeStr(byteCode);
+                            codeStr += " " + byteCode;
+                        }
+                        code.setExceptionTableLength(U2.read(fileInputStream));
+                        ArrayList<ExceptionTable> exceptionTableList = new ArrayList<>();
+                        for (int k = 0; k < code.getExceptionTableLength(); k++) {
+                            Integer startPC = U2.read(fileInputStream);
+                            Integer endPC = U2.read(fileInputStream);
+                            Integer handlerPC = U2.read(fileInputStream);
+                            Integer catchTypeIndex = U2.read(fileInputStream);
+                            ExceptionTable exceptionTable = new ExceptionTable(startPC, endPC,
+                                    handlerPC, catchTypeIndex);
+                            exceptionTableList.add(exceptionTable);
+                        }
+                        code.setExceptionTableArrayList(exceptionTableList);
+                        code.setAttributesLength(U2.read(fileInputStream));
+                        for (int k = 0; k < code.getAttributesLength(); k++) {
+                            LineNumberTable lineNumberTable = new LineNumberTable(constantMap);
+                            lineNumberTable.read(fileInputStream);
+                            code.addAttribute(lineNumberTable);
+                            s.append("\n " + lineNumberTable.toString());
+                        }
+                        s.append("\n" + codeStr);
+                        attributeList.add(attribute);
+                        break;
+
+                    default:
+                        throw new Exception("unfound attr: " + attribute);
 
                 }
-                Integer codeAttributeCount = U2.read(fileInputStream);
-                for (int k = 0; k < codeAttributeCount; k++) {
-                    //TODO read code attr
-                    LineNumberTable lineNumberTable = new LineNumberTable(constantMap);
-                    lineNumberTable.read(fileInputStream);
-                    s.append("\n " + lineNumberTable.toString());
-                }
-                s.append("\n" + code);
-                attributeList.add(attribute);
             }
             Field method = new Field(methodAccFlag, nameIndex, descriptorIndex, attributeCount,
                     constantMap, attributeList);
@@ -185,7 +196,11 @@ public class ParseClass {
 
     public static void main(String[] args) throws IOException {
         ParseClass parseClass = new ParseClass();
-        parseClass.parseClassFile();
+        try {
+            parseClass.parseClassFile();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 

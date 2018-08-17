@@ -30,5 +30,7 @@ public class LineNumberTableTest {
         assertEquals(10, lineNumberTable.attrNameIndex);
         assertEquals(6, lineNumberTable.attrLength);
         assertEquals(1, lineNumberTable.getLineNumberTableLength());
+        assertEquals(0, lineNumberTable.getLineNumberInfoList().get(0).getStartPC());
+        assertEquals(3, lineNumberTable.getLineNumberInfoList().get(0).getLineNumber());
     }
 }

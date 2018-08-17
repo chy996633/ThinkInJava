@@ -31,6 +31,8 @@ public class ParseClassTest {
                     + "methods: public  int inc\n", result);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
