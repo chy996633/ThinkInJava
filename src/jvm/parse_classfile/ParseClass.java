@@ -34,11 +34,14 @@ public class ParseClass {
     private ArrayList<Field> fieldList;
     private int methodCount;
     private ArrayList<Field> methodList;
+    private String fileName;
+
+    public ParseClass(String fileName) {
+        this.fileName = fileName;
+    }
 
     public String parseClassFile() throws Exception {
-        FileInputStream fileInputStream = new FileInputStream(
-                "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
-//                "/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/parse_classfile/ClassAndFieldAccessFlag.class");
+        FileInputStream fileInputStream = new FileInputStream(fileName);
         StringBuilder s = new StringBuilder();
         magicCode = U4.readString(fileInputStream);
         minorVersion = U2.read(fileInputStream);
@@ -110,7 +113,7 @@ public class ParseClass {
 
         fieldCount = U2.read(fileInputStream);
         fieldList = new ArrayList<>();
-        s.append("\nfield: ");
+        s.append("\nfield: \n");
         for (int i = 0; i < fieldCount; i++) {
             String fieldAccessFlag = ClassAndFieldAccessFlag
                     .getFlagName(U2.readU2(fileInputStream));
@@ -195,7 +198,7 @@ public class ParseClass {
     }
 
     public static void main(String[] args) throws IOException {
-        ParseClass parseClass = new ParseClass();
+        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
         try {
             parseClass.parseClassFile();
         } catch (Exception e) {

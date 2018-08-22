@@ -9,18 +9,20 @@ public class ParseClassTest {
 
     @Test
     public void parseClassFile() {
-        ParseClass parseClass = new ParseClass();
+        ParseClass parseClass = new ParseClass(
+                "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
         try {
             String result = parseClass.parseClassFile();
             assertEquals("magic: CAFEBABE\n"
                     + "minor_version: 0\n"
                     + "major_version: 50\n"
                     + "constant_pool_count: 18\n"
-                    + "class accessFlag: public super \n"
+                    + "class accessFlag: public super\n"
                     + "class: bytecode/TestClass\n"
                     + "super class: java/lang/Object\n"
                     + "interfaces: []\n"
-                    + "field: private  int m\n"
+                    + "field: \n"
+                    + "private int m\n"
                     + "\n"
                     + " LineNumberTable startPC: 0 lineNumber: 3 \n"
                     + "code index: 0x2A 0xB7 0x00 0x01 0xB1\n"

@@ -52,7 +52,8 @@ public class Field {
     public String getDescriptor() {
         String constantStr = constantPool.get(descriptorIndex).toString();
         //fit both method and field
-        String parsedResult = descriptorParseMap.get(String.valueOf(constantStr.charAt(constantStr.length() - 1)));
+        String parsedResult = descriptorParseMap
+                .get(String.valueOf(constantStr.charAt(constantStr.length() - 1)));
         return parsedResult == null
                 // object type, like Ljava/String/Object
                 ? constantPool.get(descriptorIndex).toString()
