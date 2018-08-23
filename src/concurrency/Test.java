@@ -37,24 +37,27 @@ public class Test {
 
 
     public static void main(String[] args) throws InterruptedException, ClassNotFoundException, IllegalAccessException, InstantiationException {
-//		Test test = new Test();
-//		Runnable run = test.getRunnable("concurrency.Run1");
-//		test.runInGroup(run, 40000);
+//        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+//        Class testClass = classLoader.loadClass("concurrency.Test");
+//        Test test =  (Test)testClass.newInstance();
+//        test.main(new String[]{});
+//        System.out.println(testClass.getSimpleName());
 
-//        Lock lock = new ReentrantLock();
-//        Condition condition = lock.newCondition();
-//        lock.lock();
-//        System.out.println("waiting");
-//        condition.await();
-//        System.out.println("release");
-//        lock.unlock();
 
-        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-        Class testClass = classLoader.loadClass("concurrency.Test");
-        Test test =  (Test)testClass.newInstance();
-        test.main(new String[]{});
-        System.out.println(testClass.getSimpleName());
-
+        Runnable a = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(10000);
+                    System.out.println("runnable完成计算");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        Thread b = new Thread(a);
+        b.start();
+        System.out.println("线程启动");
 
     }
 
