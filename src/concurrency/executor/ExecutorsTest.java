@@ -9,6 +9,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * Executors 是 jdk1.5引入的，实现了能够返回结果的多线程
+ * Future::get 是阻塞的
+ * submit提交顺序不是执行顺序
+ */
 public class ExecutorsTest {
 
     public static void main(String[] args) throws ExecutionException,
@@ -55,7 +60,7 @@ class MyCallable implements Callable<Object> {
     public Object call() throws Exception {
         System.out.println(">>>" + taskNum + "任务启动");
         Date dateTmp1 = new Date();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         Date dateTmp2 = new Date();
         long time = dateTmp2.getTime() - dateTmp1.getTime();
         System.out.println(">>>" + taskNum + "任务终止");
