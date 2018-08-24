@@ -1,7 +1,6 @@
 package jvm.parse_classfile;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -89,6 +88,7 @@ public class ParseClass {
             c.readFrom(fileInputStream);
             constantMap.put(i + 1, c);
         }
+        s.append("\nconstant :\n").append(constantMap.toString());
 
         accessFlagIndex = U2.readU2(fileInputStream);
         String accessFlag = ClassAndFieldAccessFlag.getFlagName(accessFlagIndex);
@@ -145,10 +145,10 @@ public class ParseClass {
             for (int j = 0; j < attributeCount; j++) {
                 Integer attributeIndex = U2.read(fileInputStream);
                 String attribute = constantMap.get(attributeIndex).toString();
+                int attrLength = U4.read(fileInputStream);
                 switch (attribute) {
                     case "Code":
-                        Code code = new Code();
-                        code.setAttributesLength(U4.read(fileInputStream));
+                        Code code = new Code(attributeIndex, attrLength);
                         code.setMaxStack(U2.read(fileInputStream));
                         code.setMaxLocals(U2.read(fileInputStream));
                         code.setCodeLength(U4.read(fileInputStream));
@@ -173,10 +173,12 @@ public class ParseClass {
                         code.setExceptionTableArrayList(exceptionTableList);
                         code.setAttributesLength(U2.read(fileInputStream));
                         for (int k = 0; k < code.getAttributesLength(); k++) {
-                            LineNumberTable lineNumberTable = new LineNumberTable(constantMap);
-                            lineNumberTable.read(fileInputStream);
-                            code.addAttribute(lineNumberTable);
-                            s.append("\n " + lineNumberTable.toString());
+                            int attrNameOfCodeIndex = U2.read(fileInputStream);
+                            int attrOfCodeLength = U4.read(fileInputStream);
+                            CodeAttribute codeAttribute = new CodeAttribute(constantMap, attrNameOfCodeIndex, attrOfCodeLength);
+                            codeAttribute.read(fileInputStream);
+                            code.addAttribute(codeAttribute);
+                            s.append("\n " + codeAttribute.toString());
                         }
                         s.append("\n" + codeStr);
                         attributeList.add(attribute);
@@ -198,7 +200,8 @@ public class ParseClass {
     }
 
     public static void main(String[] args) throws IOException {
-        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
+//        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
+        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/JavaVMStackSOE.class");
         try {
             parseClass.parseClassFile();
         } catch (Exception e) {

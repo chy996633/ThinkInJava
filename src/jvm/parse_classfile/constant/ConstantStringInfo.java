@@ -18,11 +18,19 @@ public class ConstantStringInfo implements Constant {
     @Override
     public void readFrom(FileInputStream fileInputStream) {
         index = U2.read(fileInputStream);
-        str = constantMap.get(index).toString();
+//        if (index > constantMap.size()){
+//            throw new IllegalArgumentException(getClass() + ": index "+ index +" out of constantMap");
+//        }
+//        str = constantMap.get(index).toString();
     }
 
     @Override
     public Integer getTag() {
         return 8;
+    }
+
+    @Override
+    public String toString() {
+        return constantMap.get(index).toString();
     }
 }

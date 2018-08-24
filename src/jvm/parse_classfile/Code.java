@@ -1,5 +1,6 @@
 package jvm.parse_classfile;
 
+import java.io.FileInputStream;
 import java.util.ArrayList;
 
 public class Code extends Attribute {
@@ -12,6 +13,14 @@ public class Code extends Attribute {
     private ArrayList<ExceptionTable> exceptionTableArrayList;
     private int attributesLength;
     private ArrayList<Attribute> attributes;
+
+    public Code(int attrNameIndex, int attrLength) {
+        super(attrNameIndex, attrLength);
+    }
+
+    public Code() {
+
+    }
 
     public void setMaxStack(int maxStack) {
         this.maxStack = maxStack;
@@ -90,5 +99,10 @@ public class Code extends Attribute {
             codeStrList = new ArrayList<>();
         }
         codeStrList.add(byteCode);
+    }
+
+    @Override
+    public void read(FileInputStream fileInputStream) {
+
     }
 }

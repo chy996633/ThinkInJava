@@ -74,20 +74,29 @@ public class ClassAndFieldAccessFlag {
 
     public static String getMethodFlagName(byte[] flag) {
         assert flag.length == 2;
-        String result = "";
-        result += (U2.byteToShort(flag) & ACC_PUBLIC) != 0 ? "public " : "";
-        result += (U2.byteToShort(flag) & ACC_FINAL) != 0 ? "final " : "";
-        result += (U2.byteToShort(flag) & ACC_SYNCHRONIZED) != 0 ? "synchronized " : "";
-        result += (U2.byteToShort(flag) & ACC_PRIVATE) != 0 ? "private " : "";
-        result += (U2.byteToShort(flag) & ACC_PROTECTED) != 0 ? "protected " : "";
-        result += (U2.byteToShort(flag) & ACC_STATIC) != 0 ? "static " : "";
-        result += (U2.byteToShort(flag) & ACC_BRIDGE) != 0 ? "bridge " : "";
-        result += (U2.byteToShort(flag) & ACC_VARARGS) != 0 ? "varargs " : "";
-        result += (U2.byteToShort(flag) & ACC_ABSTRACT) != 0 ? "abstract " : "";
-        result += (U2.byteToShort(flag) & ACC_SYNTHETIC) != 0 ? "synthetic " : "";
-        result += (U2.byteToShort(flag) & ACC_STRICTFP) != 0 ? "strictfp " : "";
-        result += (U2.byteToShort(flag) & ACC_NATIVE) != 0 ? "native " : "";
-        return result;
+        ArrayList<String> flagArray = new ArrayList<>();
+        Map<Integer, String> flagMap = new TreeMap();
+
+        flagMap.putIfAbsent(ACC_PUBLIC, "public");
+        flagMap.putIfAbsent(ACC_FINAL, "final");
+        flagMap.putIfAbsent(ACC_SYNCHRONIZED, "synchronized");
+        flagMap.putIfAbsent(ACC_PRIVATE, "private");
+        flagMap.putIfAbsent(ACC_PROTECTED, "protected");
+        flagMap.putIfAbsent(ACC_STATIC, "static");
+        flagMap.putIfAbsent(ACC_BRIDGE, "bridge");
+        flagMap.putIfAbsent(ACC_VARARGS, "varargs");
+        flagMap.putIfAbsent(ACC_ABSTRACT, "abstract");
+        flagMap.putIfAbsent(ACC_SYNTHETIC, "synthetic");
+        flagMap.putIfAbsent(ACC_STRICTFP, "strictfp");
+        flagMap.putIfAbsent(ACC_NATIVE, "native");
+
+        flagMap.forEach((flagNum, flagStr) -> {
+            if ((U2.byteToShort(flag) & flagNum ) != 0) {
+                flagArray.add(flagStr);
+            }
+        });
+        return flagArray.stream().reduce((accumulate, flagStr) -> accumulate + " " + flagStr)
+                .orElse("");
     }
 
 }
