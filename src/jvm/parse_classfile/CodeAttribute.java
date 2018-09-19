@@ -1,13 +1,10 @@
 package jvm.parse_classfile;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import jvm.parse_classfile.CodeAttribute.LineNumberTable.LineNumberInfo;
 
 public class CodeAttribute extends Attribute {
 
@@ -42,6 +39,11 @@ public class CodeAttribute extends Attribute {
                         attrLength);
                 localVariableTable.read(fileInputStream);
                 attributes.add(localVariableTable);
+                break;
+            case "StackMapTable":
+                StackMapTable stackMapTable = new StackMapTable(attrNameIndex, attrLength);
+                stackMapTable.read(fileInputStream);
+                attributes.add(stackMapTable);
                 break;
             default:
                 System.out.println("unfound attr in Code: "+ attrName);
@@ -168,6 +170,20 @@ public class CodeAttribute extends Attribute {
             }
         }
 
+    }
+
+    public class StackMapTable extends Attribute {
+
+        private int stackMapEntryLength;
+
+        public StackMapTable(int attrNameIndex, int attrLength) {
+            super(attrNameIndex, attrLength);
+        }
+
+        @Override
+        public void read(FileInputStream fileInputStream) {
+            stackMapEntryLength = U2.read(fileInputStream);
+        }
     }
 
 }
