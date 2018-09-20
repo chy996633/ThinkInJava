@@ -46,7 +46,7 @@ public class CodeAttribute extends Attribute {
                 attributes.add(stackMapTable);
                 break;
             default:
-                System.out.println("unfound attr in Code: "+ attrName);
+                System.out.println("unfound attr in Code: " + attrName);
         }
     }
 
@@ -183,7 +183,162 @@ public class CodeAttribute extends Attribute {
         @Override
         public void read(FileInputStream fileInputStream) {
             stackMapEntryLength = U2.read(fileInputStream);
+            for (int i = 0; i < stackMapEntryLength; i++) {
+                int frameType = U1.readInt(fileInputStream);
+                StackMapFrame stackMapFrame = null;
+                if (frameType <= 63 && frameType >= 0) {
+                    stackMapFrame = new SameFrame(frameType);
+                } else if (frameType <= 127) {
+                    stackMapFrame = new SameLocals1StackItemFrame(frameType);
+                } else if (frameType == 247) {
+                    stackMapFrame = new SameLocals1StackItemFrameExtended(frameType);
+                } else if (frameType >= 248 && frameType <= 250) {
+                    stackMapFrame = new ChopFrame(frameType);
+                } else if (frameType == 251) {
+                    stackMapFrame = new SameFrameExtended(frameType);
+                } else if (frameType == 255) {
+                    stackMapFrame = new FullFrame(frameType);
+                } else {
+                    System.out.println("unknown frameType: "+ frameType);
+                }
+                stackMapFrame.read(fileInputStream);
+            }
         }
+
+        abstract class StackMapFrame {
+
+            int frameType;
+
+            public StackMapFrame(int frameType) {
+                this.frameType = frameType;
+            }
+
+            abstract void read(FileInputStream fileInputStream);
+        }
+
+        class SameFrame extends StackMapFrame {
+
+            public SameFrame(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+
+            }
+        }
+
+        class SameLocals1StackItemFrame extends StackMapFrame {
+
+            public SameLocals1StackItemFrame(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+                readVerificationTypeInfo(fileInputStream);
+            }
+        }
+
+        class SameLocals1StackItemFrameExtended extends StackMapFrame {
+            private int offSet;
+
+            public SameLocals1StackItemFrameExtended(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+                offSet = U2.read(fileInputStream);
+                readVerificationTypeInfo(fileInputStream);
+            }
+        }
+
+        class SameFrameExtended extends StackMapFrame {
+            private int offSet;
+
+            public SameFrameExtended(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+                offSet = U2.read(fileInputStream);
+            }
+        }
+
+        class ChopFrame extends StackMapFrame {
+            private int offSet;
+
+            public ChopFrame(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+                offSet = U2.read(fileInputStream);
+            }
+        }
+
+        class FullFrame extends StackMapFrame {
+
+            private int offSet;
+            private int numberOfLocals;
+            private int numberOfStack;
+
+            public FullFrame(int frameType) {
+                super(frameType);
+            }
+
+            @Override
+            void read(FileInputStream fileInputStream) {
+                offSet = U2.read(fileInputStream);
+                numberOfLocals = U2.read(fileInputStream);
+                for (int j = 0; j < numberOfLocals; j++) {
+                    readVerificationTypeInfo(fileInputStream);
+                }
+                numberOfStack = U2.read(fileInputStream);
+                for (int j = 0; j < numberOfStack; j++) {
+                    readVerificationTypeInfo(fileInputStream);
+                }
+            }
+        }
+
+
+        public void readVerificationTypeInfo(FileInputStream fileInputStream) {
+            int tag = U1.readInt(fileInputStream);
+            if (tag == 7) {
+                int index = U2.read(fileInputStream);
+                ObjectVariableInfo ovi = new ObjectVariableInfo(tag, index);
+            } else if (tag == 8) {
+                int tagOffSet = U2.read(fileInputStream);
+            }
+        }
+
+        abstract class VerificationTypeInfo {
+
+            public VerificationTypeInfo(int tag) {
+                this.tag = tag;
+            }
+
+            int tag;
+        }
+
+        class ObjectVariableInfo extends VerificationTypeInfo {
+
+            int constantPoolIndex;
+
+            public ObjectVariableInfo(int tag, int constantPoolIndex) {
+                super(tag);
+                this.constantPoolIndex = constantPoolIndex;
+            }
+
+        }
+
+        //TODO other type info
+
+
     }
+
 
 }

@@ -62,10 +62,10 @@ public class ParseClass {
             Constant c = null;
             switch (tag) {
                 case 10:
-                    c = new ConstantMethodRefInfo();
+                    c = new ConstantMethodRefInfo(constantMap);
                     break;
                 case 9:
-                    c = new ConstantFieldRefInfo();
+                    c = new ConstantFieldRefInfo(constantMap);
                     break;
                 case 8:
                     c = new ConstantStringInfo(constantMap);
@@ -80,7 +80,7 @@ public class ParseClass {
                     c = new ConstantClassInfo(constantMap);
                     break;
                 case 12:
-                    c = new ConstantNameAndTypeInfo();
+                    c = new ConstantNameAndTypeInfo(constantMap);
                     break;
                 default:
                     System.out.println("unfound tag: " + tag);
