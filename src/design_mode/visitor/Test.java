@@ -15,6 +15,8 @@ public class Test {
 
         obj.accept(new Tree());
         obj.accept(new Flower());
+        //现在要添加一种鸟，不需要改动四季，只需要添加一种鸟的Visitor
+        obj.accept(new Bird());
 
     }
 
