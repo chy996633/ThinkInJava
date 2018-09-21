@@ -17,7 +17,7 @@ public class Code extends Attribute {
     private int attributesLength;
     private ArrayList<Attribute> attributes = new ArrayList<>();
     private HashMap<Integer, Constant> constantMap;
-    private String codeStr = "code index:";
+    private String codeStr = "Code:";
 
     public String getCodeAttrStr() {
         return codeAttrStr;
@@ -145,7 +145,7 @@ public class Code extends Attribute {
         attributesLength = U2.read(fileInputStream);
         for (int k = 0; k < attributesLength; k++) {
             CodeAttribute codeAttribute = getCodeAttribute(fileInputStream);
-            codeAttrStr += ("\n " + codeAttribute.toString());
+            codeAttrStr += ("\n" + codeAttribute.toString());
         }
     }
 

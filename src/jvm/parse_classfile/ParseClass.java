@@ -107,6 +107,10 @@ public class ParseClass {
             Integer descriptorIndex = U2.read(fileInputStream);
             Integer attributeCount = U2.read(fileInputStream);
             List<String> attributeList = new ArrayList<>();
+            Field method = new Field(methodAccFlag, nameIndex, descriptorIndex, attributeCount,
+                    constantMap, attributeList);
+            methodList.add(method);
+            s.append(method.toString()).append(" \n");
             for (int j = 0; j < attributeCount; j++) {
                 Integer attributeIndex = U2.read(fileInputStream);
                 String attribute = constantMap.get(attributeIndex).toString();
@@ -128,10 +132,7 @@ public class ParseClass {
 
                 }
             }
-            Field method = new Field(methodAccFlag, nameIndex, descriptorIndex, attributeCount,
-                    constantMap, attributeList);
-            methodList.add(method);
-            s.append("\nmethods: " + method.toString()).append("\n");
+            s.append("\n\n");
         }
 
         System.out.println(s);

@@ -26,14 +26,14 @@ public class ParseClassTest {
                     + "field: \n"
                     + "private int m\n"
                     + "\nmethod: \n"
+                    + "public void <init> \n"
                     + "\n"
-                    + " LineNumberTable startPC: 0 lineNumber: 3 \n"
-                    + "code index: 0x2A 0xB7 0x00 0x01 0xB1\n"
-                    + "methods: public void <init>\n"
+                    + "LineNumberTable startPC: 0 lineNumber: 3 \n"
+                    + "Code: 0x2A 0xB7 0x00 0x01 0xB1\n\n"
+                    + "public int inc \n"
                     + "\n"
-                    + " LineNumberTable startPC: 0 lineNumber: 8 \n"
-                    + "code index: 0x2A 0xB4 0x00 0x02 0x04 0x60 0xAC\n"
-                    + "methods: public int inc\n", result);
+                    + "LineNumberTable startPC: 0 lineNumber: 8 \n"
+                    + "Code: 0x2A 0xB4 0x00 0x02 0x04 0x60 0xAC\n\n", result);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (Exception e) {
@@ -60,22 +60,25 @@ public class ParseClassTest {
                     + "field: \n"
                     + "public int length\n"
                     + "\nmethod: \n"
+                    + "public void <init> \n"
                     + "\n"
-                    + " LineNumberTable startPC: 0 lineNumber: 6 startPC: 4 lineNumber: 8 \n"
-                    + " jvm.parse_classfile.CodeAttribute$LocalVariableTable@61064425\n"
-                    + "code index: 0x2A 0xB7 0x00 0x01 0x2A 0x03 0xB5 0x00 0x02 0xB1\n"
-                    + "methods: public void <init>\n"
+                    + "LineNumberTable startPC: 0 lineNumber: 6 startPC: 4 lineNumber: 8 \n"
+                    + "jvm.parse_classfile.CodeAttribute$LocalVariableTable@ed17bee\n"
+                    + "Code: 0x2A 0xB7 0x00 0x01 0x2A 0x03 0xB5 0x00 0x02 0xB1\n"
                     + "\n"
-                    + " LineNumberTable startPC: 0 lineNumber: 11 startPC: 8 lineNumber: 13 startPC: 12 lineNumber: 18 startPC: 15 lineNumber: 15 startPC: 16 lineNumber: 16 startPC: 44 lineNumber: 17 startPC: 46 lineNumber: 19 \n"
-                    + " jvm.parse_classfile.CodeAttribute$LocalVariableTable@7b1d7fff\n"
-                    + " jvm.parse_classfile.CodeAttribute$StackMapTable@299a06ac\n"
-                    + "code index: 0xBB 0x00 0x03 0x59 0xB7 0x00 0x04 0x4C 0x2B 0xB7 0x00 0x05 0xA7 0x00 0x22 0x4D 0xB2 0x00 0x07 0xBB 0x00 0x08 0x59 0xB7 0x00 0x09 0x12 0x0A 0xB6 0x00 0x0B 0x2B 0xB4 0x00 0x02 0xB6 0x00 0x0C 0xB6 0x00 0x0D 0xB6 0x00 0x0E 0x2C 0xBF 0xB1\n"
-                    + "methods: public static void main\n"
+                    + "public static void main \n"
                     + "\n"
-                    + " LineNumberTable startPC: 0 lineNumber: 22 startPC: 10 lineNumber: 23 startPC: 14 lineNumber: 24 \n"
-                    + " jvm.parse_classfile.CodeAttribute$LocalVariableTable@383534aa\n"
-                    + "code index: 0x2A 0x59 0xB4 0x00 0x02 0x04 0x60 0xB5 0x00 0x02 0x2A 0xB7 0x00 0x05 0xB1\n"
-                    + "methods: private void stackLeak\n", result);
+                    + "LineNumberTable startPC: 0 lineNumber: 11 startPC: 8 lineNumber: 13 startPC: 12 lineNumber: 18 startPC: 15 lineNumber: 15 startPC: 16 lineNumber: 16 startPC: 44 lineNumber: 17 startPC: 46 lineNumber: 19 \n"
+                    + "jvm.parse_classfile.CodeAttribute$LocalVariableTable@2a33fae0\n"
+                    + "jvm.parse_classfile.CodeAttribute$StackMapTable@707f7052\n"
+                    + "Code: 0xBB 0x00 0x03 0x59 0xB7 0x00 0x04 0x4C 0x2B 0xB7 0x00 0x05 0xA7 0x00 0x22 0x4D 0xB2 0x00 0x07 0xBB 0x00 0x08 0x59 0xB7 0x00 0x09 0x12 0x0A 0xB6 0x00 0x0B 0x2B 0xB4 0x00 0x02 0xB6 0x00 0x0C 0xB6 0x00 0x0D 0xB6 0x00 0x0E 0x2C 0xBF 0xB1\n"
+                    + "\n"
+                    + "private void stackLeak \n"
+                    + "\n"
+                    + "LineNumberTable startPC: 0 lineNumber: 22 startPC: 10 lineNumber: 23 startPC: 14 lineNumber: 24 \n"
+                    + "jvm.parse_classfile.CodeAttribute$LocalVariableTable@11028347\n"
+                    + "Code: 0x2A 0x59 0xB4 0x00 0x02 0x04 0x60 0xB5 0x00 0x02 0x2A 0xB7 0x00 0x05 0xB1\n"
+                    + "\n", result);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (Exception e) {
