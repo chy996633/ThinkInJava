@@ -8,6 +8,9 @@ import java.util.List;
 
 public class CodeAttribute extends Attribute {
 
+    public static final String LINE_NUMBER_TABLE = "LineNumberTable";
+    public static final String LOCAL_VARIABLE_TABLE = "LocalVariableTable";
+    public static final String STACK_MAP_TABLE = "StackMapTable";
     private FileInputStream fileInputStream;
     private FileOutputStream fileOutputStream;
     private List<Attribute> attributes = new ArrayList<>();
@@ -29,18 +32,18 @@ public class CodeAttribute extends Attribute {
 
         String attrName = constantPoolMap.get(attrNameIndex).toString();
         switch (attrName) {
-            case "LineNumberTable":
+            case LINE_NUMBER_TABLE:
                 LineNumberTable lineNumberTable = new LineNumberTable(attrNameIndex, attrLength);
                 lineNumberTable.read(fileInputStream);
                 attributes.add(lineNumberTable);
                 break;
-            case "LocalVariableTable":
+            case LOCAL_VARIABLE_TABLE:
                 LocalVariableTable localVariableTable = new LocalVariableTable(attrNameIndex,
                         attrLength);
                 localVariableTable.read(fileInputStream);
                 attributes.add(localVariableTable);
                 break;
-            case "StackMapTable":
+            case STACK_MAP_TABLE:
                 StackMapTable stackMapTable = new StackMapTable(attrNameIndex, attrLength);
                 stackMapTable.read(fileInputStream);
                 attributes.add(stackMapTable);
@@ -125,7 +128,7 @@ public class CodeAttribute extends Attribute {
 
         private int localVariableInfoLength;
 
-        private List<LocalVariableInfo> localVariableInfoList;
+        private List<LocalVariableInfo> localVariableInfoList = new ArrayList<>();
 
         public LocalVariableTable(int attrNameIndex, int attrLength) {
             super(attrNameIndex, attrLength);
@@ -141,6 +144,12 @@ public class CodeAttribute extends Attribute {
             }
         }
 
+        @Override
+        public String toString() {
+            StringBuffer s = new StringBuffer();
+            localVariableInfoList.forEach(lvi -> s.append(lvi.toString()));
+            return s.toString();
+        }
 
         class LocalVariableInfo {
 
@@ -176,6 +185,8 @@ public class CodeAttribute extends Attribute {
 
         private int stackMapEntryLength;
 
+        private List<StackMapFrame> stackMapFrameList = new ArrayList<>();
+
         public StackMapTable(int attrNameIndex, int attrLength) {
             super(attrNameIndex, attrLength);
         }
@@ -199,10 +210,18 @@ public class CodeAttribute extends Attribute {
                 } else if (frameType == 255) {
                     stackMapFrame = new FullFrame(frameType);
                 } else {
-                    System.out.println("unknown frameType: "+ frameType);
+                    System.out.println("unknown frameType: " + frameType);
                 }
                 stackMapFrame.read(fileInputStream);
+                stackMapFrameList.add(stackMapFrame);
             }
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder s = new StringBuilder();
+            stackMapFrameList.forEach(stackMapFrame -> s.append(stackMapFrame.toString()));
+            return s.toString();
         }
 
         abstract class StackMapFrame {
@@ -214,6 +233,11 @@ public class CodeAttribute extends Attribute {
             }
 
             abstract void read(FileInputStream fileInputStream);
+
+            @Override
+            public String toString() {
+                return getClass().getName() + " /** " + frameType+" /";
+            }
         }
 
         class SameFrame extends StackMapFrame {
@@ -241,6 +265,7 @@ public class CodeAttribute extends Attribute {
         }
 
         class SameLocals1StackItemFrameExtended extends StackMapFrame {
+
             private int offSet;
 
             public SameLocals1StackItemFrameExtended(int frameType) {
@@ -255,6 +280,7 @@ public class CodeAttribute extends Attribute {
         }
 
         class SameFrameExtended extends StackMapFrame {
+
             private int offSet;
 
             public SameFrameExtended(int frameType) {
@@ -268,6 +294,7 @@ public class CodeAttribute extends Attribute {
         }
 
         class ChopFrame extends StackMapFrame {
+
             private int offSet;
 
             public ChopFrame(int frameType) {
