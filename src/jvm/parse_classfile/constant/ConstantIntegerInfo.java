@@ -25,4 +25,9 @@ public class ConstantIntegerInfo implements Constant {
     public Integer getTag() {
         return 3;
     }
+
+    @Override
+    public String toString() {
+        return "CONSTANT_Integer_info = " + value;
+    }
 }

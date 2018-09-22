@@ -4,6 +4,7 @@ import java.util.HashMap;
 import jvm.parse_classfile.constant.Constant;
 import jvm.parse_classfile.constant.ConstantClassInfo;
 import jvm.parse_classfile.constant.ConstantFieldRefInfo;
+import jvm.parse_classfile.constant.ConstantFloatInfo;
 import jvm.parse_classfile.constant.ConstantIntegerInfo;
 import jvm.parse_classfile.constant.ConstantMethodRefInfo;
 import jvm.parse_classfile.constant.ConstantNameAndTypeInfo;
@@ -32,6 +33,8 @@ public class ConstantFactory {
             case 3:
                 c = new ConstantIntegerInfo();
                 break;
+            case 4:
+                c = new ConstantFloatInfo();
             case 7:
                 c = new ConstantClassInfo(constantMap);
                 break;

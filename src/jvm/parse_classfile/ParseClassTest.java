@@ -10,29 +10,33 @@ public class ParseClassTest {
     @Test
     public void parseClassFile() {
         ParseClass parseClass = new ParseClass(
-                "/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
+                "/home/backstop-samuel/git_code/ThinkInJava/bin/bytecode/TestClass.class");
         try {
             String result = parseClass.parseClassFile();
             assertEquals("magic: CAFEBABE\n"
                     + "minor_version: 0\n"
-                    + "major_version: 50\n"
-                    + "constant_pool_count: 18\n"
+                    + "major_version: 52\n"
+                    + "constant_pool_count: 21\n"
                     + "constant :\n"
-                    + "{1=java/lang/Object <init> ()V, 2=bytecode/TestClass m I, 3=bytecode/TestClass, 4=java/lang/Object, 5=m, 6=I, 7=<init>, 8=()V, 9=Code, 10=LineNumberTable, 11=inc, 12=()I, 13=SourceFile, 14=TestClass.java, 15=<init> ()V, 16=m I, 17=bytecode/TestClass, 18=java/lang/Object}\n"
+                    + "{1=java/lang/Object <init> ()V, 2=bytecode/TestClass m I, 3=bytecode/TestClass, 4=java/lang/Object, 5=m, 6=I, 7=<init>, 8=()V, 9=Code, 10=LineNumberTable, 11=LocalVariableTable, 12=this, 13=Lbytecode/TestClass;, 14=inc, 15=()I, 16=SourceFile, 17=TestClass.java, 18=<init> ()V, 19=m I, 20=bytecode/TestClass, 21=java/lang/Object}\n"
                     + "class accessFlag: public super\n"
                     + "class: bytecode/TestClass\n"
                     + "super class: java/lang/Object\n"
                     + "interfaces: []\n"
                     + "field: \n"
                     + "private int m\n"
-                    + "\nmethod: \n"
+                    + "\n"
+                    + "method: \n"
                     + "public void <init> \n"
                     + "\n"
                     + "LineNumberTable startPC: 0 lineNumber: 3 \n"
-                    + "Code: 0x2A 0xB7 0x00 0x01 0xB1\n\n"
+                    + "startPC: 0 length: 5 name: this descriptor: Lbytecode/TestClass;\n"
+                    + "Code: 0x2A 0xB7 0x00 0x01 0xB1\n"
+                    + "\n"
                     + "public int inc \n"
                     + "\n"
                     + "LineNumberTable startPC: 0 lineNumber: 8 \n"
+                    + "startPC: 0 length: 7 name: this descriptor: Lbytecode/TestClass;\n"
                     + "Code: 0x2A 0xB4 0x00 0x02 0x04 0x60 0xAC\n\n", result);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
