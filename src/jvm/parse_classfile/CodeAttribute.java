@@ -141,6 +141,7 @@ public class CodeAttribute extends Attribute {
             for (int i = 0; i < localVariableInfoLength; i++) {
                 LocalVariableInfo localVariableInfo = new LocalVariableInfo();
                 localVariableInfo.read(fileInputStream);
+                localVariableInfoList.add(localVariableInfo);
             }
         }
 

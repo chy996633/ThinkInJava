@@ -29,7 +29,7 @@ public class ConstantFactory {
             case 1:
                 c = new ConstantUTF8Info();
                 break;
-            case 2:
+            case 3:
                 c = new ConstantIntegerInfo();
                 break;
             case 7:

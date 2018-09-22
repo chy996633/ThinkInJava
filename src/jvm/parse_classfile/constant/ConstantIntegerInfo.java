@@ -23,6 +23,6 @@ public class ConstantIntegerInfo implements Constant {
 
     @Override
     public Integer getTag() {
-        return 2;
+        return 3;
     }
 }
