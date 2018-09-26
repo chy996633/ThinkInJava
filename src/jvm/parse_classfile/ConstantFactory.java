@@ -3,6 +3,7 @@ package jvm.parse_classfile;
 import java.util.HashMap;
 import jvm.parse_classfile.constant.Constant;
 import jvm.parse_classfile.constant.ConstantClassInfo;
+import jvm.parse_classfile.constant.ConstantDoubleInfo;
 import jvm.parse_classfile.constant.ConstantFieldRefInfo;
 import jvm.parse_classfile.constant.ConstantFloatInfo;
 import jvm.parse_classfile.constant.ConstantIntegerInfo;
@@ -35,6 +36,10 @@ public class ConstantFactory {
                 break;
             case 4:
                 c = new ConstantFloatInfo();
+                break;
+            case 6:
+                c = new ConstantDoubleInfo();
+                break;
             case 7:
                 c = new ConstantClassInfo(constantMap);
                 break;

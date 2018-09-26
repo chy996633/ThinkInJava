@@ -141,7 +141,7 @@ public class ParseClass {
 
     public static void main(String[] args) throws IOException {
 //        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/src/bytecode/TestClass.class");
-        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/JavaVMStackSOE.class");
+        ParseClass parseClass = new ParseClass("/home/backstop-samuel/git_code/ThinkInJava/bin/jvm/test/AllConstant.class");
         try {
             parseClass.parseClassFile();
         } catch (Exception e) {
