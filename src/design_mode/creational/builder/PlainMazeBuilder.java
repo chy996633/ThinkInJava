@@ -1,4 +1,4 @@
-package design_mode.builder;
+package design_mode.creational.builder;
 
 /**
  * Created by Andrew on 2016/11/7.
@@ -11,12 +11,12 @@ public class PlainMazeBuilder extends MazeBuilder {
 
     @Override
     public void buildRoom(int i, int j) {
-        maze[i][j] = '|';
+        maze[i][j] = '□';
     }
 
     @Override
     public void buildWall(int i, int j) {
-        maze[i][j] = '□';
+        maze[i][j] = '|';
     }
 
     @Override

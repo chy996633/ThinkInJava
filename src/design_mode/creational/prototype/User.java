@@ -1,4 +1,4 @@
-package design_mode.prototype;
+package design_mode.creational.prototype;
 
 public class User implements Cloneable{
 
