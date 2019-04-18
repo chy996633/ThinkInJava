@@ -37,7 +37,7 @@ public class VolatileNotAutomic {
         Thread t1 = new Thread(new LoopVolatile());
         t1.start();
 
-        Thread t2 = new Thread(new LoopVolatile2());
+        Thread t2 = new Thread(new LoopVolatile());
         t2.start();
 
         while (t1.isAlive() || t2.isAlive()) {
