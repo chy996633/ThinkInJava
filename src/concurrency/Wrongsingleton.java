@@ -4,11 +4,12 @@ package concurrency;
  * 测试使用volatile 保证单例模式的原子性是不可靠的
  */
 public class Wrongsingleton {
-    private static volatile Wrongsingleton _instance = null;
+//    private static volatile Wrongsingleton _instance = null;
+    private static Wrongsingleton _instance = null;
 
     private Wrongsingleton() {}
 
-    public static Wrongsingleton getInstance() {
+    public static synchronized Wrongsingleton getInstance() {
 
         if (_instance == null) {
             _instance = new Wrongsingleton();

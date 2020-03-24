@@ -49,7 +49,7 @@ public class ReflectionTest {
         try {
             Class<?> clazz = str.getClass();
             Field field = clazz.getDeclaredField("value");
-//            field.setAccessible(true);
+            field.setAccessible(true);
             Object obj = field.get(str);
             char[] charValue = (char[]) obj;
             charValue = new char[3];

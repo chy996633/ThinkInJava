@@ -10,7 +10,7 @@ public class ParseClassTest {
     @Test
     public void parseClassFile() {
         ParseClass parseClass = new ParseClass(
-                "/home/backstop-samuel/git_code/ThinkInJava/bin/bytecode/TestClass.class");
+                "C:\\Users\\samuel-chen\\IdeaProjects\\ThinkInJava\\bin\\bytecode\\TestClass.class");
         try {
             String result = parseClass.parseClassFile();
             assertEquals("magic: CAFEBABE\n"

@@ -38,7 +38,7 @@ public class MinorGCTest {
     }
 
     public static void main(String[] args) {
-        MinorGCTest.testTenuringThreshold2();
+        MinorGCTest.testMinorGC();
 
 
     }
