@@ -1,7 +1,7 @@
 package jvm;
 
 /**
- * VM args: -Xss228k
+ * VM args: -Xss128k
  */
 public class JavaVMStackSOE {
 
