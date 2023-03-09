@@ -1,3 +1,5 @@
+package javapuzzles.src.main.java;
+
 /**
  * Created by Andrew on 2016/10/20.
  */

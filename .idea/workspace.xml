@@ -1,451 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1ef159e-b251-4ffe-9284-9df535875528" name="New changelist" comment="New changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjtools_1_7_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_3_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_instrument_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/AtomicityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/AtomicityTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javapuzzles/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/BusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/BusinessServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/com/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/hbm/Category.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/hbm/Customer.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/hbm/Order.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/hibernate.properites" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/viewConfig/jsp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/classes/需求变更" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/aspectjtools-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/aspectjweaver-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/c3p0-0.9.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/freemarker-2.3.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hamcrest-library-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hibernate-c3p0-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/javax.transaction.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/junit-4.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-aspects-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-instrument-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-jms-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-orm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/view/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/hibernate_test_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/BusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/BusinessServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/dao/LoginDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/model/BModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/com/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/hbm/User.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/hibernate.properites" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/viewConfig/jsp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/classes/需求变更" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/aspectjtools-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/aspectjweaver-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/c3p0-0.9.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/freemarker-2.3.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/hibernate-c3p0-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-aspects-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-instrument-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-jms-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-orm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/view/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/view/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/view/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/css/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/css/mobiscroll.custom-2.16.1.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/css/shendeng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/css/validate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/b201206121538344172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/bg_agreement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/bg_dotted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/bx_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/ico_weixin_customer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_age.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_amend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_amount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_apartment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_dowm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_down_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_down_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_right_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_arrow_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bar_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bar_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bar_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_bar_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_branches.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_circle_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_circle_gray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_circle_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_circle_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_comm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_contact.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_editor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_efficiency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_efficiency_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_efficiency_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_efficiency_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_gender.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_house_number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_institutions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_institutions_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_interest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_interest_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_invite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_limit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_limit_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_lines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_loan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_marriage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_name.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_name_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_number_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_order_finish.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_person.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_person_date.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_price.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_price_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_price_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_price_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_relation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_relation_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_remove.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_scop_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_scope.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_scope_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_scope_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_shops.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_state.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_suburbs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_success.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_tel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/icon_time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/option_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/option_bg_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/option_bg_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/option_bg_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/option_bg_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/order_agreement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/order_selected_agreement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/pic_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/place_order_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/produce_car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/product_expenditure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/product_house.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/project_preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/selected_agreement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/images/us_intro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/PCASClass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/bootstrap-timepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/WdatePicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/lang/zh-tw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/WdatePicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/datePicker.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/default/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/default/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/whyGreen/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/whyGreen/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/date97/skin/whyGreen/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/jquery-2.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/jquery.md5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/jquery.placeholder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/lrz.mobile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/mobiscroll.custom-2.16.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/verify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/js/zepto.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/plugins/photoswipe/default-skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/plugins/photoswipe/photoswipe-ui-default.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/plugins/photoswipe/photoswipe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine/public/plugins/photoswipe/photoswipe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/BusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/BusinessServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/com/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/hibernate.properites" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/viewConfig/jsp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/classes/需求变更" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/aspectjtools-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/aspectjweaver-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/c3p0-0.9.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/freemarker-2.3.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/hibernate-c3p0-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-aspects-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-instrument-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-jms-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-orm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/view/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_hib_combine_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/CleverSwap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/DosEquis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/Elementary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/JoyOfHex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/LongDivision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/Multicast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/Oddity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/Tweedledee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/Tweedledum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2-expressive-puzzlers/puzzle/Change.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/hbm/Category.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/hbm/Customer.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/hbm/Order.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/hibernate.properites" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate_test/需求变更" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/code/reflect/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/code/reflect/ReflectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/concurrency/AtomicityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/concurrency/AtomicityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/concurrency/Wrongsingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/concurrency/Wrongsingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvm/MinorGCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm/MinorGCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvm/parse_classfile/ParseClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm/parse_classfile/ParseClassTest.java" afterDir="false" />
-    </list>
-    <list id="543cb68a-d9b3-48bf-8f61-77f4a4a4eb95" name="Default" comment="建立Junit测试&#10;">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b1ef159e-b251-4ffe-9284-9df535875528" name="New changelist" comment="JVM栈溢出示例">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThinkInJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ThinkInJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NewTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Test$TestB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/AbstractFactory.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/design_mode_AbstractFactory.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/observer/Boss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/observer/Office.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/observer/Programmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/design_mode/observer/StageGirl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/javapuzzles.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/javapuzzles/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/src/main/java/Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javapuzzles/src/main/java/Change.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/src/main/java/Null.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javapuzzles/src/main/java/Null.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles/target/classes/Change.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/AbstractFactory.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/BakeChickenCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/BakeMuttonCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Barbecuer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Invoker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Receiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/command/Waiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/Corner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/LinePointCornerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/PointCornerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/TildePointCornerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/abstract_factory/factory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/CountMazeBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/Maze.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/MazeBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/MazeDirector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/PlainMazeBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/builder/builder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/prototype/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/prototype/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/creational/prototype/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/design_mode_AbstractFactory.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/observer/Boss.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/observer/Office.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/observer/Programmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/observer/StageGirl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/DynamicProxyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/Givegift.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/Pursuit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/PursuitProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/PursuitProxyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/SchoolGirl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/AfternoonState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/CompanyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/Context.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/LunchTimeState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/MorningState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/MustRestState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/OverTimeState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/RestState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/state/WorkEfficiency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Autumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Bird.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Flower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/ObjectStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Season.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/SeasonVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Spring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Summer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design_mode/visitor/Winter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swt/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swt/util/SWTApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swt/util/SWTConsole.java" beforeDir="false" />
+    </list>
+    <list id="543cb68a-d9b3-48bf-8f61-77f4a4a4eb95" name="Default" comment="add" />
+    <list id="ba9b26e6-1ade-4d6a-9caf-367eeb923176" name="local" comment="">
       <change beforePath="$PROJECT_DIR$/bin/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/beanUtils/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/beanUtils/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/beanUtils/BeanUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/beanUtils/BeanUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/beanUtils/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/beanUtils/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/CargoShip19.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/CargoShip19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/CoffeeGenerator_old.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/CoffeeGenerator_old.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/Item$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/Item$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/Office.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/Office.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/Shelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/Shelf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chapter15/StorageArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chapter15/StorageArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/code/DBConnectionTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/code/DBConnectionTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/code/RegTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/code/RegTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/code/lambdaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/code/lambdaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/A$B.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/A$B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/A$C.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/A$C.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/A$VC.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/A$VC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/Accessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/Accessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/B$D.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/B$D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/LiftOff.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/LiftOff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/TestMain4$Runnable1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/TestMain4$Runnable2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/TestMain4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/concurrency/Toast$Status$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/concurrency/Toast$Status$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/AbstractFactory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/Corner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/LinePointCornerFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/LinePointCornerFactory$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/LinePointCornerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/PointCornerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/TildePointCornerFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/TildePointCornerFactory$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/abstract_factory/TildePointCornerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/CountMazeBuilder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/CountMazeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/Maze.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/MazeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/MazeDirector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/PlainMazeBuilder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/design_mode/builder/PlainMazeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/holding/TextFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/holding/TextFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/net/mindview/util/Print.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/net/mindview/util/Print.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/InfiniteRecursionError.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/InfiniteRecursionError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/StringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/StringTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_mode/proxy/DynamicProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design_mode/proxy/PursuitProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_mode/proxy/PursuitProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design_mode/state/CompanyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design_mode/state/CompanyTest.java" afterDir="false" />
     </list>
     <ignored path="ThinkInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -495,88 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/HeapOOM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/test/AllConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/ParseClassTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="38" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/concurrency/Wrongsingleton.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/U2.java">
+        <entry file="file://$PROJECT_DIR$/src/com/code/streamTest/FunctionalUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/U4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/MinorGCTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/JConsoleTraceTet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/JavaVMStackSOE.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="247">
+              <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -601,6 +159,8 @@
       <find>start</find>
       <find>tryAcquireShared</find>
       <find>TYPE</find>
+      <find>sort</find>
+      <find>InvocationHandler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -614,12 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/design_mode/Boss.java" />
-        <option value="$PROJECT_DIR$/src/design_mode/StageGirl.java" />
-        <option value="$PROJECT_DIR$/src/com/code/GenericTest.java" />
-        <option value="$PROJECT_DIR$/src/com/code/SubGenericClass.java" />
-        <option value="$PROJECT_DIR$/src/design_mode/abstract_factory/a.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/design_mode/abstract_factory/PointCornerFactory.java" />
         <option value="$PROJECT_DIR$/src/design_mode/abstract_factory/Corner.java" />
         <option value="$PROJECT_DIR$/src/design_mode/abstract_factory/Point.java" />
@@ -663,8 +217,14 @@
         <option value="$PROJECT_DIR$/src/concurrency/ThreadStatusTest.java" />
         <option value="$PROJECT_DIR$/src/concurrency/ThreadStatusTestWithLock.java" />
         <option value="$PROJECT_DIR$/src/com/code/reflect/ReflectionTest.java" />
-        <option value="$PROJECT_DIR$/src/jvm/MinorGCTest.java" />
         <option value="$PROJECT_DIR$/src/jvm/parse_classfile/ParseClassTest.java" />
+        <option value="$PROJECT_DIR$/src/jvm/JavaVMStackSOE.java" />
+        <option value="$PROJECT_DIR$/src/jvm/MinorGCTest.java" />
+        <option value="$PROJECT_DIR$/src/DynamicProxyTest2.java" />
+        <option value="$PROJECT_DIR$/src/DynamicProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/javapuzzles/src/main/java/Change.java" />
+        <option value="$PROJECT_DIR$/src/com/code/streamTest/FunctionalUtil.java" />
       </list>
     </option>
   </component>
@@ -685,10 +245,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="700" />
+    <option name="y" value="-10" />
+    <option name="width" value="1280" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -714,6 +274,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -724,25 +286,20 @@
             <path>
               <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="ThinkInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ThinkInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ThinkInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="ThinkInJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThinkInJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="streamTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ThinkInJava" type="b2602c69:ProjectViewProjectNode" />
@@ -752,8 +309,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -776,7 +331,7 @@
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
     <property name="js-jscs-nodeInterpreter" value="D:\software\node-v6.2.1-win-x64\node-v6.2.1-win-x64\node.exe" />
     <property name="last.edited.regexp" value="newf" />
-    <property name="last_opened_file_path" value="E:/dev/project/java/company_git_project/rd-manage-service" />
+    <property name="last_opened_file_path" value="E:/dev/project/java/design_mode" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43383086" />
@@ -791,6 +346,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel-chen\IdeaProjects\ThinkInJava\src" />
       <recent name="E:\My_code\Java\ThinkInJava\hibernate_test\web\WEB-INF\view" />
       <recent name="E:\My_code\Java\ThinkInJava\hibernate_test\src\hbm" />
       <recent name="E:\My_code\Java\ThinkInJava\hibernate_test\src\com" />
@@ -802,11 +358,11 @@
       <recent name="com.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel-chen\IdeaProjects\ThinkInJava\src" />
       <recent name="C:\Users\samuel-chen\IdeaProjects\ThinkInJava\src\concurrency" />
       <recent name="E:\My_code\Java\ThinkInJava\src\design_mode" />
       <recent name="E:\My_code\Java\spring-hib-combine\src\main\java\hbm" />
       <recent name="E:\My_code\Java\spring-hib-combine\src\main" />
-      <recent name="E:\My_code\Java\ThinkInJava\src\holding" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="design_mode.abstract_factory" />
@@ -825,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParseClassTest.parseClassFile">
+  <component name="RunManager" selected="Application.ReflectionTest">
     <configuration default="true" type="AndroidRunConfigurationType">
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -1118,16 +674,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinorGCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jvm.MinorGCTest" />
+    <configuration name="DynamicProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DynamicProxyTest" />
       <module name="ThinkInJava" />
-      <option name="VM_PARAMETERS" value="-Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jvm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1154,13 +704,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestWithLockAndCondition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="concurrency.consumer.TestWithLockAndCondition" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="ThinkInJava" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.musicboard.Test7" />
       <module name="ThinkInJava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="concurrency.consumer.*" />
+          <option name="PATTERN" value="com.code.musicboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1168,13 +726,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadStatusTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="concurrency.ThreadStatusTest" />
+    <configuration name="TestWeakReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="garbege_collect.TestWeakReference" />
       <module name="ThinkInJava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="concurrency.*" />
+          <option name="PATTERN" value="garbege_collect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1188,39 +746,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParseClassTest.parseClassFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThinkInJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jvm.parse_classfile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jvm.parse_classfile" />
-      <option name="MAIN_CLASS_NAME" value="jvm.parse_classfile.ParseClassTest" />
-      <option name="METHOD_NAME" value="parseClassFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="ThinkInJava" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1388,20 +916,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.DynamicProxyTest" />
       <item itemvalue="Application.OutputThread" />
-      <item itemvalue="Application.ThreadStatusTest" />
-      <item itemvalue="Application.TestWithLockAndCondition" />
       <item itemvalue="Application.ReflectionTest" />
-      <item itemvalue="Application.MinorGCTest" />
-      <item itemvalue="JUnit.ParseClassTest.parseClassFile" />
+      <item itemvalue="Application.Test7" />
+      <item itemvalue="Application.TestWeakReference" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParseClassTest.parseClassFile" />
-        <item itemvalue="Application.MinorGCTest" />
         <item itemvalue="Application.ReflectionTest" />
-        <item itemvalue="Application.TestWithLockAndCondition" />
-        <item itemvalue="Application.ThreadStatusTest" />
+        <item itemvalue="Application.Test7" />
+        <item itemvalue="Application.TestWeakReference" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.DynamicProxyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1416,6 +944,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="543cb68a-d9b3-48bf-8f61-77f4a4a4eb95" name="Default" comment="" />
       <changelist id="b1ef159e-b251-4ffe-9284-9df535875528" name="New changelist" comment="" />
+      <changelist id="ba9b26e6-1ade-4d6a-9caf-367eeb923176" name="local" comment="" />
       <created>1445484765444</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1561,7 +1090,42 @@
       <option name="project" value="LOCAL" />
       <updated>1585036947853</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add">
+      <created>1585037115977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585037115977</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add">
+      <created>1585037131701</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585037131701</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test">
+      <created>1602418305745</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602418305745</updated>
+    </task>
+    <task id="LOCAL-00012" summary="jdk动态代理">
+      <created>1602418330925</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602418330925</updated>
+    </task>
+    <task id="LOCAL-00013" summary="JVM栈溢出示例">
+      <created>1602418349430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602418349430</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1585,7 +1149,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -1594,14 +1159,14 @@
       <window_info id="JRebel" order="4" sideWeight="0.5191571" side_tool="true" weight="0.18059126" />
       <window_info id="Persistence" order="5" sideWeight="0.5191571" side_tool="true" weight="0.18059126" />
       <window_info id="Favorites" order="6" sideWeight="0.5191571" side_tool="true" weight="0.18059126" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.48084292" visible="true" weight="0.1398079" />
-      <window_info id="Structure" order="8" weight="0.16328709" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.48084292" visible="true" weight="0.19395973" />
+      <window_info id="Structure" order="8" weight="0.15955175" />
       <window_info id="Learn" order="9" weight="0.32977587" />
       <window_info id="Image Layers" order="10" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.36798337" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3224401" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4936034" weight="0.43899783" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4936034" visible="true" weight="0.30610022" />
       <window_info anchor="bottom" x="1737" y="236" width="1471" height="681" id="Debug" order="4" sideWeight="0.49253732" weight="0.43572986" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1611,7 +1176,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.32135075" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.24428274" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4994664" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4994664" weight="0.3148148" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.3286445" />
       <window_info anchor="bottom" id="Terminal" order="15" weight="0.26143792" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1688,7 +1253,10 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="remove" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="test" />
+    <MESSAGE value="jdk动态代理" />
+    <MESSAGE value="JVM栈溢出示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="JVM栈溢出示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1789,12 +1357,6 @@
           <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jvm/MinorGCTest.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1817,213 +1379,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="288" column="12" selection-start-line="288" selection-start-column="12" selection-end-line="288" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter 17/Containers/17.9/E09_RandTreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Spliterators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="417" column="37" selection-start-line="417" selection-start-column="37" selection-end-line="417" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
-          <folding>
-            <element signature="e#5767#5768#0" expanded="true" />
-            <element signature="e#5800#5801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/NavigableMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/NavigableSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4716">
-          <caret line="295" column="22" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7776">
-          <caret line="467" column="9" selection-start-line="467" selection-start-column="9" selection-end-line="467" selection-end-column="9" />
-          <folding>
-            <element signature="e#19103#19104#0" expanded="true" />
-            <element signature="e#19161#19162#0" expanded="true" />
-            <element signature="e#24331#24332#0" expanded="true" />
-            <element signature="e#24396#24397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50184">
-          <caret line="2884" column="66" selection-start-line="2884" selection-start-column="66" selection-end-line="2884" selection-end-column="66" />
-          <folding>
-            <element signature="e#44347#44348#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Think in java 4th code/containers/References.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReferenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/garbege_collect/TestWeakReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3474">
-          <caret line="221" column="43" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/org/apache/commons/logging/Log.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/org/apache/commons/logging/LogFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1135">
-          <caret line="227" column="22" selection-start-line="227" selection-start-column="22" selection-end-line="227" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/concurrency/VolatileNotAutomic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/concurrency/consumer/TestWithLockAndCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/concurrency/ThreadStatusTestWithLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21204">
-          <caret line="1251" column="19" selection-start-line="1251" selection-start-column="19" selection-end-line="1251" selection-end-column="19" />
-          <folding>
-            <element signature="e#15704#15705#0" expanded="true" />
-            <element signature="e#15770#15771#0" expanded="true" />
-            <element signature="e#19132#19133#0" expanded="true" />
-            <element signature="e#19175#19176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedHashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="172" column="77" selection-start-line="172" selection-start-column="77" selection-end-line="172" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#7805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/HashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="161" column="28" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
-          <folding>
-            <element signature="e#8064#8065#0" expanded="true" />
-            <element signature="e#8112#8113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/TreeSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1746">
@@ -2048,28 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/code/reflect/ReflectedObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Void.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="43" column="40" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
-          <folding>
-            <element signature="e#4677#4678#0" expanded="true" />
-            <element signature="e#4714#4715#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2104,65 +1441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collections/HashMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/code/reflect/ReflectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/RuntimeConstantPoolOOM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/MinorGCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/JConsoleTraceTet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/JavaVMStackSOE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/HeapOOM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/test/AllConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collections/HashMapTest.java" />
     <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/LineNumberTest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2185,6 +1464,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/ParseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-487">
+          <caret line="77" column="79" lean-forward="true" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/test/AllConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrency/Wrongsingleton.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/U4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -2199,29 +1495,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/ParseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/jvm/HeapOOM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="77" column="79" lean-forward="true" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/parse_classfile/ParseClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="648">
           <caret line="39" column="38" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/algorithm/GCDAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/algorithm/SplitTestOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/RuntimeConstantPoolOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/JConsoleTraceTet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/MinorGCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/ClassForName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DynamicProxyTest2.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="702" column="41" selection-start-line="702" selection-start-column="25" selection-end-line="702" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter 14/TypeInfo/14.22/E22_SimpleDynamicProxyDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/WeakCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DynamicProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#684#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        <state relative-caret-position="90">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/concurrency/Wrongsingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/jvm/JavaVMStackSOE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javapuzzles/src/main/java/Null.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swt/util/SWTApplication.java" />
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javapuzzles/src/main/java/Change.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javapuzzles/target/classes/Change.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javapuzzles/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/garbege_collect/TestWeakReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generics/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/garbege_collect/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/musicboard/Test7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/reflect/ReflectedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
+          <folding>
+            <element signature="e#4677#4678#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/reflect/ReflectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/code/streamTest/FunctionalUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -2245,7 +1759,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.6220588" />
+                <option value="0.43383086" />
               </list>
             </option>
           </splitter-proportions>
@@ -2277,11 +1791,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>main</last-edited>
+          <last-edited>ThinkInJava</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.43383086" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

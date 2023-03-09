@@ -1,3 +1,5 @@
+package javapuzzles.src.main.java;
+
 import java.math.BigDecimal;
 
 /**
